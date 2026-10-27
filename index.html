@@ -1,0 +1,2954 @@
+﻿<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1"
+    />
+    <meta name="theme-color" content="#B76E79" />
+    <title>SheMantra — महिलाओं की सेहत का आयुर्वेदिक साथी</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <!-- Shared selectors keep repeated styles together. Preserve compact CSS when formatting. -->
+    <!-- prettier-ignore -->
+    <style>
+:root { --bg: #FBF4E9; --main-bg: #FFFDF9; --text-color: #38252A; --highlighted: #B76E79; --blue: #B76E79; --navy: #38252A; --ink: var(--text-color); --muted: #6B555B; --line: #E8D8C8; --tint: #F3E5D5; --paper: #ffffff; --cream: #FBF4E9; --cream-deep: #EFE0D0; --w: 450px; --shadow: 0 12px 30px rgba(56, 37, 42, 0.08); }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 20px; }
+body { font-family: Noto Sans Devanagari,
+          sans-serif; color: var(--ink); background: var(--main-bg); display: flex; justify-content: center; }
+button, input { font: inherit; }
+a { text-decoration: none; }
+a, button, input { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--highlighted); outline-offset: 4px; }
+.page { width: 100%; max-width: var(--w); min-height: 100vh; padding-bottom: 90px; border-inline: 1px solid var(--line); overflow: hidden; }
+h2, h3 { font-family: Noto Sans Devanagari,
+          serif; line-height: 1.35; }
+h3 { font-size: 16px; }
+p { font-size: 14px; line-height: 1.65; color: var(--muted); }
+section { padding: 32px 20px; border-bottom: 1px solid var(--line); }
+.kicker { font: 700 12px/1.5 Noto Sans Devanagari,
+          sans-serif; margin-bottom: 10px; }
+.section-head { text-align: center; margin-bottom: 24px; }
+.section-head h2 { max-width: 370px; margin: auto; }
+.banner { padding-top: 36px; text-align: center; flex-direction: column; align-items: center; }
+.cta, .submit { background: var(--blue); color: var(--bg); border: 0; padding: 13px 18px; font-size: 15px; font-weight: 600; box-shadow: none; margin-top: 22px; width: 100%; }
+.cta:hover, .sticky a:hover, .submit:hover { background: var(--navy); }
+.quote-box { border-left: 3px solid var(--blue); padding: 16px; border-radius: 0 14px 14px 0; font-size: 16px; font-family: Noto Sans Devanagari,
+          serif; margin-top: 22px; color: var(--navy); }
+.product-panel { border-radius: 22px; }
+.card { border: 1px solid var(--line); padding: 20px; border-radius: 16px; box-shadow: none; }
+.card h3 { color: var(--navy); margin-bottom: 8px; font-size: 16px; }
+.how-symbol { display: grid; place-items: center; color: var(--blue); font-size: 50px; }
+.how-step h3 { font: 600 16px/1.4 Noto Sans Devanagari,
+          sans-serif; }
+.herb-visual > i { font-size: 78px; }
+.herb:nth-child(2n) .herb-visual > i { transform: rotate(-20deg); }
+.herb-content { border-top: 1px solid var(--line); }
+.herb-content h3 { margin-bottom: 8px; font-size: 16px; }
+.trust-grid { display: grid; }
+#order-form > p, .benefits-title, .offer-box, .secure, .trust-card { text-align: center; }
+.trust-card h3 { margin-bottom: 6px; font-size: 15px; }
+.offer-box { margin-top: 23px; }
+.price span { font-size: 22px; }
+.field label { display: block; font-weight: 600; font-size: 13px; }
+.field input { width: 100%; color: var(--ink); min-width: 0; font-size: 14px; }
+.err { display: none; font-size: 12px; color: var(--text-color); margin-top: 5px; }
+.err.show { display: block; }
+.secure { color: var(--muted); font-size: 12px; }
+.order-status { font-size: 13px; color: var(--navy); margin-top: 10px; }
+.answer, .order-status:empty { display: none; }
+.benefits-title { margin-top: 24px; font-size: 16px; }
+.story-head { margin-bottom: 16px; }
+.story h3 { font: 600 16px/1.4 Noto Sans Devanagari,
+          sans-serif; }
+.faq button, .sticky { justify-content: space-between; }
+.faq.open .answer { display: block; }
+.faq.open { border-color: var(--bg); }
+.disclaimer h2 { margin-bottom: 13px; }
+.sticky { position: fixed; bottom: max(12px, env(safe-area-inset-bottom)); left: 50%; transform: translate(-50%, calc(100% + 40px)); max-width: var(--w); width: calc(100% - 24px); backdrop-filter: none; z-index: 80; visibility: hidden; transition: transform 0.25s,
+          visibility 0.25s; }
+.sticky.show { transform: translate(-50%); visibility: visible; }
+.sticky a { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; flex-shrink: 0; color: var(--bg); font-size: 15px; box-shadow: none; }
+.sticky a:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+.loading { position: fixed; inset: 0; background: var(--highlighted); z-index: 300; display: none; align-items: center; justify-content: center; }
+.loading.show { display: flex; }
+.loading-box { padding: 25px; border-radius: 16px; }
+.spinner { width: 35px; height: 35px; border: 3px solid var(--line); border-top-color: var(--blue); border-radius: 50%; margin: 0 auto 10px; animation: spin 1s linear infinite; }
+@keyframes spin {
+  to { transform: rotate(1turn); }
+}
+.pp-overlay { position: fixed; inset: 0; background: var(--highlighted); z-index: 999; display: flex; align-items: center; justify-content: center; padding: 15px; visibility: hidden; opacity: 0; pointer-events: none; }
+.pp-overlay.show { visibility: visible; opacity: 1; pointer-events: auto; }
+.pp-modal { width: min(420px, 100%); max-height: 75dvh; overflow-y: auto; padding: 22px; border-radius: 18px; overscroll-behavior: contain; }
+.pp-close { float: right; position: sticky; top: 0; border: 0; border-radius: 50%; width: 32px; height: 32px; background: var(--tint); color: var(--blue); font-size: 22px; }
+.pp-mtitle { font-size: 22px; color: var(--navy); margin: 0 35px 15px 0; }
+.pp-modal p { font-size: 14px; line-height: 1.7; color: var(--muted); }
+@media (max-width: 360px) {
+  section { padding: 28px 15px; }
+  .how-step { gap: 7px; }
+  .how-step h3 { font-size: 15px; }
+  .how-symbol { font-size: 40px; height: 140px; }
+  .sticky a { padding: 12px; }
+  .trust-card { padding: 20px 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, :after, :before { animation: none !important; transition: none !important; }
+}
+#how-it-works .how-flow { display: grid; }
+#how-it-works .how-step { display: grid; overflow: hidden; border: 1px solid var(--bg); border-radius: 20px; background: var(--bg); box-shadow: none; }
+#how-it-works .how-symbol { min-height: 170px; background: var(--bg); }
+#how-it-works .how-symbol:after { content: ""; position: absolute; inset: 0; background: var(--bg); pointer-events: none; }
+#how-it-works .how-symbol img { min-height: 170px; }
+#how-it-works .how-copy h3 { color: var(--blue); }
+#how-it-works .how-step:hover .how-symbol img { transform: scale(1.05); }
+@media (max-width: 399px) {
+  #how-it-works .how-step, #how-it-works .how-step:nth-child(2n) { grid-template-columns: 1fr; }
+  #how-it-works .how-step:nth-child(2n) .how-copy, #how-it-works .how-step:nth-child(2n) .how-symbol { grid-column: 1; grid-row: auto; }
+  #how-it-works .how-symbol, #how-it-works .how-symbol img { min-height: 150px; }
+}
+#comparison, #experiences, #faq, #guidance, #ingredients, #problem-section, #product, #quality, #routine, .banner { background: var(--cream); }
+.card, .faq button, .form-card, .herb, .herb-visual, .how-symbol, .loading-box, .offer-box, .pp-modal, .quote-box, .story, .trust-card { background: var(--bg); }
+.banner { height: auto; }
+.banner:before { display: none; }
+#product { padding-top: 40px; padding-bottom: 40px; }
+#product .product-panel { padding: 0; border: 0; box-shadow: none; }
+@keyframes showcaseBreath {
+  50% { background-position: 10% 5%,
+            94% 90%,
+            50% 48%; }
+}
+@keyframes haloFloat {
+  50% { transform: translateX(-50%) scale(1.06); opacity: 1; }
+}
+@media (max-width: 360px) {
+  #product .section-head h2 { font-size: 21px; }
+}
+#how-it-works { background: var(--cream); }
+#how-it-works .how-flow { position: relative; }
+#how-it-works .how-step { position: relative; align-items: center; }
+#how-it-works .how-step:not(:last-child):before { content: ""; position: absolute; left: calc(-1px + var(--circle-size) / 2); top: 50%; width: 3px; background: var(--bg); pointer-events: none; }
+#how-it-works .how-symbol { position: relative; z-index: 1; grid-column: 1; grid-row: 1; min-width: 0; overflow: hidden; border: 4px solid var(--bg); border-radius: 50%; box-shadow: none; transition: transform 0.25s,
+          box-shadow 0.25s,
+          border-color 0.25s; }
+#how-it-works .how-symbol img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+#how-it-works .how-copy { grid-column: 2; grid-row: 1; border: 1px solid var(--bg); box-shadow: none; transition: border-color 0.25s,
+          box-shadow 0.25s; }
+@media (hover: hover) and (pointer: fine) {
+  #how-it-works .how-step:hover .how-symbol { transform: translateY(-3px); border-color: var(--highlighted); box-shadow: none; }
+  #how-it-works .how-step:hover img { transform: scale(1.045); }
+  #how-it-works .how-step:hover .how-copy { border-color: var(--bg); box-shadow: none; }
+}
+#how-it-works .how-step:active .how-symbol { transform: scale(0.98); border-color: var(--blue); }
+@keyframes compactHowReveal {
+  0% { opacity: 1; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 360px) {
+  #how-it-works .how-flow { --circle-size: 104px; }
+  #how-it-works .how-copy { padding: 10px 8px; }
+  #how-it-works .how-copy h3 { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #how-it-works .how-step, #how-it-works .how-step * { animation: none !important; transition: none !important; transform: none !important; }
+}
+#how-it-works .how-flow { --circle-size: 148px; gap: 30px; grid-auto-rows: 1fr; }
+#how-it-works .section-head .kicker { display: none; }
+#how-it-works .how-step { grid-template-columns: var(--circle-size) minmax(0, 1fr); gap: 16px; min-height: 172px; }
+#how-it-works .how-symbol { width: var(--circle-size); height: var(--circle-size); border-width: 4px; }
+#how-it-works .how-copy { display: flex; min-width: 0; min-height: 116px; padding: 19px 16px; flex-direction: column; justify-content: center; border-radius: 17px; align-self: stretch; width: 100%; }
+#how-it-works .how-step:nth-child(2n) { grid-template-columns: minmax(0, 1fr) var(--circle-size); }
+#how-it-works .how-step:nth-child(2n) .how-symbol { grid-column: 2; }
+#how-it-works .how-step:nth-child(2n) .how-copy { grid-column: 1; }
+#how-it-works .how-step:before { display: none; }
+#how-it-works .how-copy h3 { font-size: 16px; line-height: 1.4; margin-bottom: 7px; }
+#how-it-works .how-copy p { font-size: 13.5px; line-height: 1.6; }
+#how-it-works .how-step:not(:last-child):before { height: calc(100% + 30px); }
+@media (max-width: 360px) {
+  #how-it-works .how-flow { --circle-size: 124px; gap: 24px; }
+  #how-it-works .how-step { gap: 12px; min-height: 150px; }
+  #how-it-works .how-copy { padding: 15px 11px; min-height: 104px; }
+  #how-it-works .how-copy h3 { font-size: 15px; }
+}
+#how-it-works .how-step:nth-child(2n) .how-copy, #how-it-works .how-step:nth-child(2n) .how-symbol { grid-row: 1; }
+#guidance { padding-top: 38px; padding-bottom: 38px; background: var(--bg); }
+#guidance .section-head { margin-bottom: 24px; }
+#guidance .section-head .kicker { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid var(--highlighted); border-radius: 30px; background: var(--bg); letter-spacing: 1.8px; }
+#guidance .section-head .kicker:before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--highlighted); box-shadow: none; }
+#guidance .section-head h2 { margin-top: 14px; text-wrap: balance; }
+.doctor-photo-frame { position: relative; display: grid; place-items: center; min-height: 310px; overflow: hidden; }
+.doctor-photo-frame:before { content: ""; position: absolute; inset: 0; display: block; background: url("images/doctor.avif") top/cover no-repeat; z-index: 1; }
+.doctor-bio p { margin: 0; }
+#guidance .doctor-profile { overflow: hidden; margin-bottom: 22px; border: 1px solid var(--highlighted); border-radius: 24px; box-shadow: none; }
+#guidance .doctor-photo-frame:before { transition: transform 0.6s; }
+#guidance .doctor-bio { position: relative; padding: 24px 22px; border-top: 3px solid var(--highlighted); }
+#guidance .doctor-bio p { color: var(--text-color); font-size: 14px; line-height: 1.7; }
+#guidance .doctor-bio strong { color: var(--text-color); font-weight: 600; }
+#guidance .doctor-bio p + p { margin-top: 14px; }
+#guidance .doctor-bio p:last-child { padding: 12px 14px; border-left: 3px solid var(--highlighted); border-radius: 0 12px 12px 0; background: var(--bg); color: var(--highlighted); }
+#guidance .doctor-photo-frame { margin: 0; border: 0; border-radius: 0; background: var(--bg) url("images/doctor.avif") center/cover no-repeat; }
+#guidance .doctor-photo-frame .slimax-symbol { position: relative; z-index: 2; width: 100%; min-height: 310px; background: transparent; }
+#guidance .doctor-photo-frame .slimax-symbol i { display: none; }
+#guidance .cards { display: grid; gap: 14px; }
+#guidance .cards .card { position: relative; overflow: hidden; display: grid; grid-template-columns: 82px minmax(0, 1fr); align-items: center; align-content: center; gap: 6px 16px; min-height: 118px; padding: 16px; border: 1px solid var(--highlighted); border-radius: 18px; box-shadow: none; transition: transform 0.25s,
+          box-shadow 0.25s,
+          border-color 0.25s; }
+#guidance .cards .card:after { content: ""; position: absolute; inset: 18px 0 18px auto; width: 3px; border-radius: 3px 0 0 3px; background: var(--highlighted); transition: background 0.25s; }
+#guidance .cards .card > i { grid-column: 1; grid-row: 1/3; display: grid; place-items: center; width: 82px; height: 82px; margin: 0; border: 1px solid var(--highlighted); border-radius: 16px; background-color: var(--bg); background-position: 50%; background-repeat: no-repeat; background-size: calc(100% - 14px); box-shadow: none; }
+#guidance .cards .card > i:before { content: none; }
+#guidance .cards .card:first-child > i { background-image: url("images/cert1.avif"); }
+#guidance .cards .card:nth-child(2) > i { background-image: url("images/cert2.avif"); }
+#guidance .cards .card:nth-child(3) > i { background-image: url("images/cert3.avif"); }
+#guidance .cards .card h3 { grid-column: 2; align-self: end; margin: 0; color: var(--text-color); font-family: Noto Sans Devanagari,
+          sans-serif; font-weight: 600; font-size: 16px; line-height: 1.35; }
+#guidance .cards .card p { grid-column: 2; align-self: start; margin: 0; color: var(--text-color); font-size: 13px; line-height: 1.6; }
+@media (hover: hover) and (pointer: fine) {
+  #guidance .doctor-profile:hover .doctor-photo-frame:before { transform: scale(1.035); }
+  #guidance .cards .card:hover { transform: translateY(-3px); border-color: var(--highlighted); box-shadow: none; }
+  #guidance .cards .card:hover:after { background: var(--highlighted); }
+}
+@media (max-width: 360px) {
+  #guidance .section-head h2 { font-size: 20px; }
+  #guidance .doctor-bio { padding: 20px 16px; }
+  #guidance .cards .card { padding: 13px; grid-template-columns: 70px minmax(0, 1fr); gap: 4px 12px; }
+  .doctor-photo-frame { min-height: 270px; }
+  .doctor-bio { padding: 20px 17px 22px; }
+  #guidance .cards .card > i { width: 70px; height: 70px; }
+  #guidance .cards .card h3 { font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #guidance .cards .card, #guidance .cards .card:after, #guidance .doctor-photo-frame:before { transition: none; transform: none !important; }
+}
+#comparison { position: relative; padding: 42px 16px; background: var(--bg); }
+#comparison .section-head { margin-bottom: 25px; }
+#comparison .kicker { display: inline-flex; padding: 6px 13px; border: 1px solid var(--highlighted); border-radius: 30px; background: var(--bg); letter-spacing: 2px; }
+#comparison .section-head h2 { margin-top: 12px; }
+#comparison .options-frame { overflow: hidden; border: 1px solid var(--highlighted); border-radius: 22px; background: var(--bg); box-shadow: none; }
+#comparison .comparison-banner { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; background: var(--highlighted); color: var(--bg); }
+#comparison .comparison-banner:after { content: ""; position: absolute; inset: -100% -40%; pointer-events: none; background: var(--bg); transform: translateX(-70%); animation: comparison-shine 7s ease-in-out infinite; }
+#comparison .comparison-banner strong { display: block; font-size: 16px; letter-spacing: 0.3px; }
+#comparison .comparison-banner small { display: block; margin-top: 2px; color: var(--bg); font-size: 12px; }
+#comparison .comparison-vs { display: grid; place-items: center; flex: 0 0 38px; height: 38px; border: 1px solid var(--bg); border-radius: 50%; font: 700 12px/1 Noto Sans Devanagari,
+          sans-serif; }
+#comparison .options-table { width: 100%; border-collapse: collapse; table-layout: fixed; text-align: center; }
+#comparison .options-table thead th { padding: 16px 7px 13px; width: 25%; vertical-align: middle; background: var(--bg); color: var(--text-color); font-size: 12px; font-weight: 600; }
+#comparison .options-table thead th:first-child { width: 50%; padding-left: 16px; text-align: left; color: var(--text-color); }
+#comparison .options-table thead th:nth-child(2) { background: var(--bg); color: var(--highlighted); }
+#comparison .comparison-brand { display: block; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+#comparison .comparison-leaf { display: block; margin-bottom: 6px; font-size: 17px; }
+#comparison .options-table tbody th, #comparison .options-table td { padding: 13px 8px; border-top: 1px solid var(--bg); vertical-align: middle; background: var(--bg); transition: background 0.25s; }
+#comparison .options-table tbody th { padding-left: 16px; text-align: left; color: var(--text-color); font-size: 13px; line-height: 1.55; font-weight: 500; }
+#comparison .options-table td:nth-child(2) { background: var(--bg); border-inline: 1px solid var(--bg); }
+#comparison .comparison-mark { display: inline-grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; font: 700 14px/1 Arial,
+          sans-serif; transition: transform 0.25s,
+          box-shadow 0.25s; }
+#comparison .comparison-mark.is-no, #comparison .comparison-mark.is-yes { color: var(--highlighted); background: var(--bg); }
+#comparison .options-table td:nth-child(2) .is-yes { background: var(--highlighted); color: var(--bg); box-shadow: none; }
+#comparison .options-frame { transition: opacity 0.7s,
+          transform 0.7s; }
+#comparison.comparison-pending .options-frame { opacity: 0; transform: translateY(22px); }
+@keyframes comparison-shine {
+  0%, 55% { transform: translateX(-70%); }
+  85%, to { transform: translateX(70%); }
+}
+@media (hover: hover) and (pointer: fine) {
+  #comparison .options-table tbody tr:hover > *, #comparison .options-table tbody tr:hover > td:nth-child(2) { background: var(--bg); }
+  #comparison .options-table tbody tr:hover .comparison-mark { transform: scale(1.12); box-shadow: none; }
+}
+@media (max-width: 360px) {
+  #comparison { padding-inline: 12px; }
+  #comparison .options-table tbody th { padding-left: 12px; font-size: 12px; }
+  #comparison .options-table thead th { font-size: 11px; }
+  #comparison .comparison-brand { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #comparison .comparison-banner:after { animation: none; }
+  #comparison .comparison-mark, #comparison .options-frame, #comparison .options-table tbody th, #comparison .options-table td { transition: none; }
+  #comparison.comparison-pending .options-frame { opacity: 1; transform: none; }
+}
+#ingredients { padding: 42px 16px; background: var(--bg); }
+#ingredients .section-head { margin-bottom: 28px; }
+#ingredients .herbs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+#ingredients .herb { overflow: hidden; border: 1px solid var(--highlighted); border-radius: 20px; box-shadow: none; transition: transform 0.25s,
+          box-shadow 0.25s,
+          border-color 0.25s; }
+#ingredients .herb-visual { position: relative; display: grid; place-items: center; height: 154px; overflow: hidden; background-position: 50%; background-size: cover; }
+#ingredients .herb:first-child .herb-visual { background-image: url("images/ing1.avif"); }
+#ingredients .herb:nth-child(2) .herb-visual { background-image: url("images/ing2.avif"); }
+#ingredients .herb:nth-child(3) .herb-visual { background-image: url("images/ing3.avif"); }
+#ingredients .herb:nth-child(4) .herb-visual { background-image: url("images/ing4.avif"); }
+#ingredients .herb-visual > i { display: none; }
+#ingredients .herb-content { min-height: 72px; padding: 14px 12px 16px; }
+#ingredients .herb-content h3 { margin: 0; color: var(--text-color); font-size: 16px; }
+#ingredients .herb-content p { color: var(--text-color); font-size: 13px; line-height: 1.6; }
+@media (hover: hover) and (pointer: fine) {
+  #ingredients .herb:hover { transform: translateY(-5px); border-color: var(--highlighted); box-shadow: none; }
+}
+#ingredients .herb:active { transform: scale(0.98); border-color: var(--blue); }
+@media (max-width: 360px) {
+  #ingredients .herbs { gap: 10px; }
+  #ingredients .herb-visual { height: 130px; }
+  #ingredients .herb-content { min-height: 66px; padding: 12px 10px 14px; }
+  #ingredients .herb-content h3 { font-size: 15px; }
+  #ingredients .herb-content p { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #ingredients .herb { transition: none; transform: none !important; }
+}
+#routine { padding: 32px 20px; background: var(--bg); border-block: 1px solid var(--bg); }
+#routine .section-head { margin-bottom: 20px; }
+#before-after { display: none !important; }
+#routine .section-head h2 { margin-top: 0; }
+#routine .routine-list { display: grid; gap: 16px; list-style: none; margin: 0; padding: 0; }
+#routine .routine-item { position: relative; display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 13px; padding: 18px 15px; border: 1px solid var(--bg); border-radius: 17px; box-shadow: none; transition: transform 0.25s,
+          box-shadow 0.25s,
+          border-color 0.25s; }
+#routine .routine-number { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--bg); border-radius: 50%; font: 600 12px/1 Noto Sans Devanagari,
+          sans-serif; }
+#routine .routine-item:first-child:after { content: ""; position: absolute; left: 34px; top: 100%; height: 17px; border-left: 1px dashed var(--bg); }
+#routine .routine-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 32px; margin-bottom: 5px; }
+#routine .routine-heading h3 { color: var(--text-color); font-size: 16px; margin: 0; }
+#routine .routine-heading i { color: var(--text-color); font-size: 17px; transition: transform 0.25s,
+          color 0.25s; }
+#routine .routine-item p { color: var(--text-color); font-size: 13.5px; line-height: 1.65; margin: 0; }
+#routine .routine-detail { display: flex; align-items: center; gap: 7px; margin-top: 11px; padding-top: 10px; border-top: 1px solid var(--bg); color: var(--text-color); font-size: 12px; font-weight: 500; }
+#routine .routine-detail:before { content: ""; width: 5px; height: 5px; flex: 0 0 5px; border-radius: 50%; background: var(--text-color); }
+@media (hover: hover) and (pointer: fine) {
+  #routine .routine-item:hover { transform: translateY(-3px); border-color: var(--bg); box-shadow: none; }
+  #routine .routine-item:hover .routine-heading i { color: var(--navy); transform: translateY(-2px); }
+}
+@media (max-width: 360px) {
+  #routine { padding-inline: 14px; }
+  #routine .routine-item { gap: 10px; padding: 16px 12px; }
+  #routine .routine-item:first-child:after { left: 30px; }
+  #routine .routine-heading h3 { font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #routine .routine-heading i, #routine .routine-item { transition: none; transform: none !important; }
+}
+#quality { padding-top: 40px; padding-bottom: 40px; background: var(--cream); }
+#quality .trust-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+#quality .trust-card { aspect-ratio: auto; overflow: hidden; padding: 0; border: 1px solid var(--bg); border-radius: 19px; box-shadow: none; transition: transform 0.25s,
+          border-color 0.25s,
+          box-shadow 0.25s; }
+#quality .trust-card h3 { color: var(--navy); font-size: 15px; margin: 0 0 5px; }
+#quality .trust-card p { font-size: 12px; line-height: 1.5; }
+@media (hover: hover) and (pointer: fine) {
+  #quality .trust-card:hover { transform: translateY(-5px); border-color: var(--bg); box-shadow: none; }
+}
+#quality .trust-card:active { transform: scale(0.98); border-color: var(--blue); }
+@media (max-width: 360px) {
+  #quality .trust-card h3 { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #quality .trust-card { transition: none !important; transform: none !important; }
+}
+#offer { position: relative; isolation: isolate; padding: 44px 20px; background: var(--bg); }
+#offer .section-head { margin-bottom: 25px; text-align: center; }
+#offer .kicker { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border: 1px solid var(--highlighted); border-radius: 30px; background: var(--bg); letter-spacing: 1.5px; }
+#offer .kicker i { color: var(--highlighted); animation: offerIconFloat 3s ease-in-out infinite; }
+#offer .section-head h2 { margin-top: 14px; }
+#offer .offer-box { position: relative; margin: 0; padding: 0; overflow: hidden; border: 1px solid var(--highlighted); border-radius: 25px; background: var(--bg); box-shadow: none; }
+#offer .offer-deal { position: relative; overflow: hidden; padding: 27px 24px 25px; text-align: left; color: var(--bg); background: var(--highlighted); }
+#offer .offer-deal:before { content: ""; position: absolute; width: 220px; height: 220px; border: 1px solid var(--bg); border-radius: 50%; right: -85px; top: -105px; box-shadow: none; pointer-events: none; }
+#offer .offer-edition { display: inline-flex; align-items: center; gap: 7px; color: var(--bg); font: 600 10px/1.5 Arial,
+          sans-serif; letter-spacing: 2px; }
+#offer .price { position: relative; margin: 18px 0 12px; color: var(--bg); font: 800 calc(clamp(60px, 16vw, 76px))/0.95 Arial,
+          sans-serif; letter-spacing: -4px; }
+#offer .price .offer-percent { display: inline; font-size: 0.55em; color: var(--bg); vertical-align: top; line-height: 1.3; letter-spacing: -2px; }
+#offer .price .offer-discount-label { display: block; margin-top: 10px; color: var(--bg); font: 600 18px/1.4 Noto Sans Devanagari,
+          sans-serif; letter-spacing: 0; }
+#offer .offer-deal > p { position: relative; max-width: 270px; margin: 15px 0 0; color: var(--bg); font-size: 13px; line-height: 1.65; }
+#offer .offer-sticker { position: absolute; z-index: 1; right: 19px; top: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 85px; height: 85px; border: 4px double var(--highlighted); border-radius: 50%; background: var(--bg); color: var(--highlighted); box-shadow: none; transform: rotate(10deg); animation: offerStickerFloat 5s ease-in-out infinite; }
+#offer .offer-sticker i { font-size: 20px; margin-bottom: 4px; }
+#offer .offer-sticker strong { font-size: 14px; line-height: 1.2; }
+#offer .offer-sticker small { margin-top: 2px; font-size: 10px; }
+#offer .offer-sparkle { position: absolute; right: 38px; bottom: 35px; color: var(--bg); font: 24px/1 Arial,
+          sans-serif; animation: offerIconFloat 4s ease-in-out infinite; }
+#offer .offer-details { position: relative; padding: 22px 18px 20px; border-top: 2px dashed var(--bg); }
+#offer .offer-details:after, #offer .offer-details:before { content: ""; position: absolute; top: -11px; width: 20px; height: 20px; border: 1px solid var(--bg); border-radius: 50%; background: var(--bg); }
+#offer .offer-details:before { left: -11px; }
+#offer .offer-details:after { right: -11px; }
+#offer .offer-details h3 { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0; color: var(--highlighted); font-size: 15px; font-weight: 600; }
+#offer .offer-details h3 i { color: var(--highlighted); }
+#offer .countdown { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 15px 0 20px; }
+#offer .countdown > span { flex: 1; max-width: 82px; padding: 10px 5px 8px; border: 1px solid var(--bg); border-radius: 13px; background: var(--bg); color: var(--text-color); font-size: 11px; box-shadow: none; }
+#offer .countdown strong { display: block; color: var(--highlighted); font: 700 28px/1.2 Arial,
+          sans-serif; font-variant-numeric: tabular-nums; letter-spacing: 1px; margin-bottom: 4px; }
+#offer .offer-colon { color: var(--text-color); font: 600 20px/1 Arial,
+          sans-serif; margin-top: -16px; }
+#offer .offer-cta { position: relative; display: flex; align-items: center; justify-content: center; gap: 12px; overflow: hidden; width: 100%; margin: 0; padding: 14px 12px; border: 1px solid var(--bg); border-radius: 14px; color: var(--bg); background: var(--highlighted); box-shadow: none; text-decoration: none; transition: transform 0.2s,
+          box-shadow 0.2s; }
+#offer .offer-cta > span { text-align: left; font-size: 17px; font-weight: 700; line-height: 1.3; }
+#offer .offer-cta small { display: block; margin-top: 3px; color: var(--bg); font-size: 11px; font-weight: 500; }
+#offer .offer-cta > i:first-child { font-size: 22px; animation: offerIconFloat 3.5s ease-in-out infinite; }
+#offer .offer-cta > i:last-child { margin-left: auto; font-size: 15px; }
+#offer .offer-cta:after { content: ""; position: absolute; inset: 0; pointer-events: none; background: var(--bg); transform: translateX(-130%); animation: offerShine 7s ease-in-out infinite; }
+#offer .offer-stock { display: flex; justify-content: center; align-items: center; gap: 7px; margin: 16px 0 2px; color: var(--highlighted); font-size: 12px; font-weight: 600; }
+#offer .offer-stock > span { width: 6px; height: 6px; border-radius: 50%; background: var(--highlighted); box-shadow: none; }
+#offer .offer-footnote { margin: 0; color: var(--text-color); font-size: 12px; }
+@keyframes offerStickerFloat {
+  50% { transform: translateY(-5px) rotate(5deg); }
+}
+@keyframes offerIconFloat {
+  50% { transform: translateY(-3px); }
+}
+@keyframes offerShine {
+  0%, 72% { transform: translateX(-130%); }
+  95%, to { transform: translateX(130%); }
+}
+@media (hover: hover) {
+  #offer .offer-cta:hover { transform: translateY(-2px); box-shadow: none; }
+}
+#offer .offer-cta:focus-visible { outline: 3px solid var(--highlighted); outline-offset: 4px; }
+#offer .offer-cta:active { transform: translateY(1px); }
+@media (max-width: 360px) {
+  #offer { padding: 34px 14px; }
+  #offer .offer-deal { padding: 22px 16px; }
+  #offer .offer-sticker { right: 12px; width: 74px; height: 74px; }
+  #offer .offer-details { padding: 20px 14px; }
+  #offer .offer-cta { gap: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #offer *, #offer :after { animation: none !important; transition: none !important; }
+}
+#order-form { padding: 32px 20px; background: var(--bg); }
+#order-form .benefits-title, #order-form .order-benefit-grid, #order-form .order-summary, #quality { display: none; }
+#order-form .section-head { margin-bottom: 12px; }
+#order-form > p { margin-top: 0; margin-bottom: 24px; font-size: 13.5px; }
+#order-form .form-card { padding: 0; overflow: hidden; border: 1px solid var(--bg); border-radius: 24px; box-shadow: none; }
+.order-summary { display: flex; align-items: center; gap: 12px; padding: 20px 16px; background: var(--highlighted); color: var(--bg); }
+.order-summary-icon { display: grid; place-items: center; flex: 0 0 40px; height: 40px; border: 1px solid var(--bg); border-radius: 12px; font-size: 19px; }
+.order-summary-name { flex: 1; min-width: 0; }
+.order-summary-name strong { display: block; font-size: 15px; line-height: 1.4; }
+.order-summary-name small { display: block; margin-top: 3px; font-size: 11px; color: var(--bg); }
+#orderForm { padding: 22px 18px 20px; }
+.order-fields-heading { display: flex; align-items: center; gap: 9px; margin-bottom: 18px; color: var(--navy); font: 600 16px/1.4 Noto Sans Devanagari,
+          sans-serif; }
+.order-fields-heading i { color: var(--blue); font-size: 16px; }
+#orderForm .field { margin-bottom: 16px; }
+#orderForm .field label { color: var(--navy); font-size: 13px; margin-bottom: 6px; }
+#orderForm .field label i { color: var(--highlighted); width: 18px; margin-right: 4px; font-size: 12px; }
+#orderForm .field input { height: 48px; font-size: 14px; border: 1px solid var(--bg); border-radius: 12px; padding: 0 13px; transition: background 0.2s,
+          border-color 0.2s,
+          box-shadow 0.2s; }
+#orderForm .field input::placeholder { color: var(--highlighted); font-size: 12.5px; }
+#orderForm .field input:focus { background: var(--bg); border-color: var(--blue); outline: 2px solid var(--highlighted); outline-offset: 1px; box-shadow: none; }
+#orderForm .submit { margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 10px; min-height: 50px; font-size: 15px; border-radius: 13px; transition: background 0.2s,
+          transform 0.2s,
+          box-shadow 0.2s; }
+#orderForm .submit:active { transform: scale(0.985); }
+#orderForm .secure { margin-top: 13px; font-size: 12px; line-height: 1.6; }
+#orderForm .secure i { color: var(--blue); margin-right: 5px; }
+#order-form .benefits-title { margin: 20px 0 10px; font: 600 15px/1.4 Noto Sans Devanagari,
+          sans-serif; color: var(--navy); }
+.order-benefit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+.order-benefit { padding: 12px 5px; text-align: center; border: 1px solid var(--bg); border-radius: 13px; background: var(--bg); color: var(--navy); }
+.order-benefit i { display: block; margin-bottom: 6px; color: var(--blue); font-size: 18px; }
+.order-benefit span { display: block; font-size: 11px; line-height: 1.4; font-weight: 600; }
+@media (hover: hover) and (pointer: fine) {
+  #orderForm .submit:hover { transform: translateY(-2px); background: var(--navy); box-shadow: none; }
+}
+@media (max-width: 360px) {
+  #order-form { padding: 34px 15px; }
+  .order-summary { padding: 18px 12px; gap: 9px; }
+  .order-summary-icon { flex-basis: 34px; height: 36px; font-size: 16px; }
+  .order-summary-name strong { font-size: 14px; }
+  #orderForm { padding: 18px 14px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #orderForm .field input, #orderForm .submit { transition: none !important; transform: none !important; }
+}
+#experiences { padding: 32px 20px; }
+#experiences .section-head { margin-bottom: 20px; }
+#experiences .section-head .kicker { display: none; }
+#experiences .section-head h2 { margin-top: 0; }
+#experiences .stories { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+#experiences .story { position: relative; isolation: isolate; min-height: 0; padding: 22px; border: 1px solid var(--bg); border-radius: 22px; box-shadow: none; overflow: hidden; transition: transform 0.2s,
+          box-shadow 0.2s; }
+#experiences .story:before { content: ""; position: absolute; z-index: -1; inset: 0 0 auto; height: 82px; background: var(--bg); }
+#experiences .story:nth-child(2n):before { background: var(--bg); }
+#experiences .story-head { display: flex; align-items: flex-start; gap: 16px; margin: 0 0 18px; padding: 0; border: 0; }
+#experiences .story-photo { position: relative; width: 74px; height: 74px; flex: 0 0 74px; padding: 4px; border: 0; border-radius: 50%; background: var(--bg); box-shadow: none; overflow: hidden; }
+#experiences .story-photo span { position: absolute; inset: 4px; display: grid; place-items: center; border-radius: 50%; background: var(--bg); color: var(--highlighted); font-size: 26px; }
+#experiences .story-photo img { position: relative; display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+#experiences .story-photo img[hidden] { display: none; }
+#experiences .story-person { min-width: 0; padding-top: 2px; }
+#experiences .story-person h3 { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+#experiences .story-city { display: flex; align-items: center; gap: 5px; margin-top: 6px; color: var(--text-color); font-size: 12px; }
+#experiences .story-city i { font-size: 11px; }
+#experiences .story blockquote { margin: 0; padding: 0; }
+#experiences .story blockquote:before { content: "“"; display: block; height: 26px; color: var(--highlighted); font: 46px/1 Georgia,
+          serif; }
+#experiences .story p { margin: 6px 0 18px; color: var(--text-color); font-size: 14px; line-height: 1.7; }
+#experiences .story-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 14px; border-top: 1px solid var(--bg); }
+#experiences .stars { margin: 0; color: var(--highlighted); font-size: 16px; letter-spacing: 3px; white-space: nowrap; }
+@media (hover: hover) {
+  #experiences .story:hover { transform: translateY(-3px); box-shadow: none; }
+}
+@media (max-width: 360px) {
+  #experiences .story { padding: 18px 15px; }
+  #experiences .story-head { gap: 12px; }
+  #experiences .story-photo { width: 66px; height: 66px; flex-basis: 66px; }
+  #experiences .story-person h3 { font-size: 16px; }
+  #experiences .story p { font-size: 13.5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #experiences .story { transition: none; transform: none !important; }
+  footer .policy-links button { transition: none; }
+}
+#disclaimer { border-bottom: 1px solid var(--line); border-top: 1px solid var(--bg); --text-heading: 14px; --text-body: 12px; }
+footer .policy-links { padding-bottom: 17px; border: 0; }
+footer .policy-links button { cursor: pointer; }
+#disclaimer h2 { justify-content: center; align-items: center; gap: 7px; }
+.page > footer .policy-links button { position: relative; opacity: 1; }
+.page > footer p { margin: 0; opacity: 1; line-height: 1.6; }
+#faq { background: var(--cream); padding: 32px 20px; --text-subheading: 15px; --text-body: 14px; }
+#faq .section-head { margin-bottom: 18px; }
+#faq .faq-list { display: grid; gap: 12px; }
+#faq .faq { overflow: hidden; border: 1px solid var(--line); border-radius: 16px; box-shadow: none; transition: border-color 0.2s,
+          box-shadow 0.2s; }
+#faq .faq:hover { border-color: var(--bg); box-shadow: none; }
+#faq .faq button { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 58px; padding: 14px 18px; border: 0; color: var(--navy); text-align: left; font-weight: 600; font-size: 15px; }
+#faq .faq button:before { content: none; }
+#faq .faq button:focus-visible { outline: 2px solid var(--blue); outline-offset: -4px; border-radius: 14px; }
+#faq .faq button span { display: grid; place-items: center; width: 28px; height: 28px; margin-left: auto; flex: 0 0 28px; border-radius: 8px; background: var(--tint); color: var(--blue); font-size: 18px; font-weight: 400; transition: transform 0.25s,
+          background 0.25s; }
+#faq .answer { margin: 0 18px; padding: 12px 0 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; line-height: 1.65; }
+@media (max-width: 360px) {
+  #faq .section-head h2 { font-size: 20px; }
+  #faq .faq button { padding: 14px; font-size: 14px; }
+  #faq .answer { margin-inline: 14px; font-size: 13.5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #faq .faq, #faq .faq button span { transition: none; }
+}
+.banner { display: block; padding: 0; min-height: 0; }
+.banner > .hero-banner-image { display: block !important; width: 100%; height: auto; max-height: none; aspect-ratio: auto; object-fit: contain; object-position: center; }
+.banner > * { display: block !important; }
+.slimax-symbol { display: grid; place-items: center; color: var(--blue); background: var(--bg); height: 100%; min-height: 145px; font-size: 54px; }
+.benefit-list { list-style: none; display: grid; }
+.benefit-list li:first-letter, .card > i { color: var(--blue); }
+#ingredients .herb-content { display: grid; place-items: center; text-align: center; }
+#ingredients .herb-content p { display: none; }
+.card > i { font-size: 26px; margin-bottom: 12px; }
+.options-table th { width: auto; font-size: 13px; padding: 15px 8px; }
+.options-table th:first-child { width: 52%; }
+.options-table td { padding: 14px 10px; }
+.options-table td:not(:first-child) { text-align: center; color: var(--blue); font-size: 17px; }
+.before-after { display: grid; gap: 16px; }
+.before-after .card { min-height: 300px; }
+.before-after ul { padding-left: 20px; line-height: 2.1; font-size: 13.5px; }
+.stars { color: var(--blue); letter-spacing: 3px; margin-top: 12px; }
+.countdown { display: flex; justify-content: center; gap: 12px; margin: 18px 0; }
+.countdown span { padding: 10px; background: var(--tint); border-radius: 12px; font-size: 12px; }
+.countdown strong { display: block; font-size: 24px; color: var(--blue); }
+.trust-card .slimax-symbol { border-radius: 14px; margin-bottom: 16px; }
+.story { min-height: 210px; }
+.pp-modal h3 { margin: 16px 0 6px; font-size: 16px; }
+@media (max-width: 360px) {
+  .banner { padding: 0; }
+}
+#problem-section { background: var(--cream); padding: 36px 12px 40px; }
+#problem-section .section-head { margin-bottom: 30px; padding-inline: 8px; }
+.concern-card { --image-size: calc(clamp(108px, 34vw, 154px)); position: relative; grid-template-columns: var(--image-size) minmax(0, 1fr); min-width: 0; padding-block: 6px; transition: transform 0.25s; -webkit-tap-highlight-color: transparent; touch-action: pan-y; }
+.concern-card:before { content: ""; position: absolute; transition: border-color 0.25s,
+          box-shadow 0.25s; }
+.concern-visual { position: relative; overflow: hidden; background: var(--bg); }
+.concern-visual img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s; }
+.concern-copy { min-width: 0; }
+#problem-section .concern-copy h3 { font: 600 16px/1.4 Noto Sans Devanagari,
+          sans-serif; }
+.concern-card:nth-child(2n) { grid-template-columns: minmax(0, 1fr) var(--image-size); }
+.concern-card:nth-child(2n) .concern-visual { grid-column: 2; grid-row: 1; }
+.concern-card:nth-child(2n) .concern-copy { grid-column: 1; grid-row: 1; }
+.concern-card.is-pressed:before, .concern-card:active:before { border-color: var(--blue); }
+@media (hover: hover) and (pointer: fine) {
+  .concern-card:hover:before { border-color: var(--blue); box-shadow: none; }
+  .concern-card:hover img { transform: scale(1.045); }
+}
+@media (max-width: 360px) {
+  #problem-section { padding-inline: 10px; }
+  .concern-card { gap: 10px; }
+  #problem-section .concern-copy h3 { font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .concern-card, .concern-card:before, .concern-visual img { transition: none; }
+  .concern-card.is-pressed, .concern-card:active, .concern-card:hover img { transform: none; }
+}
+#product { --product-accent: var(--highlighted); padding: 38px 20px 34px; background: var(--bg); }
+#product .section-head { margin-bottom: 18px; }
+#product .section-head h2 { margin-top: 14px; }
+#product .product-panel { background: transparent; }
+#product .product-circle-stage { position: relative; isolation: isolate; overflow: hidden; padding: 34px 18px 24px; margin-bottom: 22px; border: 1px solid var(--highlighted); border-radius: 28px; background: var(--highlighted); text-align: center; }
+#product .product-circle-stage:before { content: ""; position: absolute; z-index: -1; inset: 12px; border: 1px solid var(--bg); border-radius: 21px; }
+#product .product-circle-stage:after { content: ""; position: absolute; z-index: -1; width: 260px; height: 260px; left: -145px; bottom: -110px; border: 1px solid var(--bg); border-radius: 50%; box-shadow: none; pointer-events: none; }
+#product .product-circle-float { position: relative; width: min(100% - 30px, 290px); aspect-ratio: 1; margin: 0 auto; animation: slimaxCircleFloat 5s ease-in-out infinite; }
+#product .product-circle-float:before { content: ""; position: absolute; inset: -20px; border: 1px solid var(--bg); border-radius: 50%; animation: slimaxCircleGlow 5s ease-in-out infinite; }
+#product .product-circle { position: absolute; inset: 0; overflow: hidden; border-radius: 50%; border: 7px solid var(--bg); background: var(--bg); box-shadow: none; }
+#product .product-circle img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; }
+#product .product-circle img[hidden] { display: none; }
+#product .product-orbit-ring { position: absolute; inset: -10px; border: 1px dashed var(--bg); border-radius: 50%; animation: slimaxCircleOrbit 26s linear infinite; }
+#product .product-orbit-ring:after, #product .product-orbit-ring:before { content: ""; position: absolute; top: 50%; width: 9px; height: 9px; margin-top: -4px; border-radius: 50%; box-shadow: none; }
+#product .product-orbit-ring:before { left: -5px; background: var(--bg); box-shadow: none; }
+#product .product-orbit-ring:after { right: -5px; width: 6px; height: 6px; background: var(--bg); }
+#product .product-leaf-badge { position: absolute; right: 0; bottom: 13%; display: grid; place-items: center; width: 48px; height: 48px; border: 4px solid var(--bg); border-radius: 50%; color: var(--bg); background: var(--product-accent); box-shadow: none; font-size: 20px; }
+#product .product-circle-caption { display: flex; flex-direction: column; gap: 5px; margin-top: 30px; color: var(--bg); }
+#product .product-circle-caption strong { font: 700 20px/1.3 Arial,
+          sans-serif; letter-spacing: 4px; }
+#product .product-circle-caption small { font-size: 13px; color: var(--bg); }
+#product .product-description { display: grid; gap: 12px; text-align: left; margin: 12px 0 18px; padding: 0; border: 0; background: transparent; box-shadow: none; }
+#product .product-description p { margin: 0; padding: 20px; border: 1px solid var(--highlighted); border-left: 3px solid var(--highlighted); border-radius: 4px 18px 18px 4px; font-size: 14px; line-height: 1.7; color: var(--text-color); box-shadow: none; }
+#product .product-description p + p { margin-top: 0; background: var(--bg); }
+#product .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0 0 24px; padding: 0; }
+#product .benefit-list li { position: relative; display: flex; align-items: center; min-width: 0; padding: 14px 14px 14px 44px; border: 1px solid var(--highlighted); border-radius: 14px; color: var(--text-color); font-size: 13.5px; line-height: 1.6; box-shadow: none; }
+#product .benefit-list li:before { content: "✓"; position: absolute; left: 13px; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--bg); color: var(--product-accent); font: 700 13px/1 Arial,
+          sans-serif; }
+@media (max-width: 480px) {
+  #product .benefit-list { grid-template-columns: 1fr; gap: 10px; }
+  #product .product-description p { padding: 16px; }
+}
+@keyframes slimaxCircleFloat {
+  0%, to { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+@keyframes slimaxCircleOrbit {
+  to { transform: rotate(1turn); }
+}
+@keyframes slimaxCircleGlow {
+  0%, to { transform: scale(0.98); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 1; }
+}
+@media (max-width: 360px) {
+  #product { padding-inline: 16px; }
+  #product .section-head h2 { font-size: 21px; }
+  #product .product-description p { padding: 14px; }
+  #product .benefit-list li { padding: 12px 10px 12px 42px; font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #product .product-circle-float, #product .product-circle-float:before, #product .product-orbit-ring { animation: none; }
+}
+main .section-head .kicker { color: var(--highlighted) !important; }
+main .section-head h2 { color: var(--text-color) !important; }
+.page > section { --text-main: 28px; --text-heading: 22px; --text-subheading: 16px; --text-body: 14px; --text-caption: 12px; --text-kicker: 11px; }
+.page > section h2 { font-size: var(--text-heading) !important; line-height: 1.38 !important; }
+.page > section :is(h3, .comparison-banner strong, .quote-box, .offer-discount-label) { font-size: var(--text-subheading) !important; line-height: 1.45 !important; }
+.page > section :is( p, li, th, td, label, input, .answer, .cta, .submit, .order-status, .order-benefit span ) { font-size: var(--text-body) !important; line-height: 1.65 !important; }
+.page > section .faq button { font-size: var(--text-subheading) !important; line-height: 1.45 !important; }
+.page > section :is( small, .routine-detail, .story-city, .secure, .err, .offer-edition, .countdown > span, .comparison-brand ) { font-size: var(--text-caption) !important; line-height: 1.5 !important; }
+.page > section .kicker { font-size: var(--text-kicker) !important; line-height: 1.5 !important; letter-spacing: 1.5px; }
+#disclaimer { margin: 0; padding: 24px 20px; background: transparent; border: 0; border-radius: 0; text-align: left; }
+#disclaimer h2 { display: block; text-align: center; margin: 0 0 10px; color: var(--text-color); font-size: 16px; font-weight: 700; letter-spacing: 0; text-transform: none; }
+#disclaimer p { max-width: 760px; margin: 0 auto; color: var(--text-color); font-size: 12px; line-height: 1.8; }
+.page > footer { padding: 26px 16px 16px; border-top: 0; font-family: Georgia,
+          Times New Roman,
+          serif; text-align: center; }
+.page > footer .hero-brand { display: block !important; margin: 0 0 26px; font-size: 30px; font-weight: 700; line-height: 1.2; letter-spacing: 0.06em; }
+footer .policy-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0; margin: 24px auto 16px; padding: 10px 0 0; border-top: 1px solid var(--bg); border-bottom: 0; }
+.page > footer .policy-links button { min-height: 44px; padding: 8px 10px; border: 0; border-radius: 4px; background: transparent; font-family: inherit; font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; letter-spacing: 0; line-height: 1.5; transition: color 0.2s,
+          background 0.2s; }
+.page > footer .policy-links button:last-child { flex-basis: auto; }
+.page > footer .policy-links button:not(:last-child):after { content: ""; position: absolute; right: 0; top: 50%; height: 12px; border-right: 1px solid var(--bg); transform: translateY(-50%); }
+.page > footer .policy-links button:focus-visible, .page > footer .policy-links button:hover { text-decoration: underline; opacity: 1; }
+.page > footer .policy-links button:focus-visible { outline: 2px solid var(--bg); outline-offset: 3px; }
+.page > footer p { font-size: 14px; letter-spacing: 0; }
+.page > footer .footer-disclaimer { font-size: 15px; line-height: 1.65; }
+#order-sticky { display: flex; align-items: center; gap: 12px; padding: 8px 9px 8px 14px; overflow: hidden; background: var(--main-bg); border: 1px solid var(--line); border-radius: 999px; box-shadow: 0 10px 24px rgba(56, 37, 42, 0.14); }
+.sticky-offer { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.sticky-discount { padding: 2px 7px; border-radius: 999px; background: var(--highlighted); color: var(--bg); font-size: 10px; font-weight: 800; line-height: 1.4; }
+.sticky-price { display: flex; align-items: baseline; gap: 7px; white-space: nowrap; line-height: 1.2; }
+.sticky-price del { color: var(--muted); font-size: 12px; text-decoration-thickness: 1px; }
+#order-sticky .sticky-price strong { color: var(--navy); font-size: 19px; font-weight: 800; }
+#order-sticky a { min-height: 40px; padding: 9px 14px; border-radius: 999px; background: var(--highlighted); color: var(--bg); font-size: 13px; font-weight: 700; box-shadow: 0 4px 10px color-mix(in srgb, var(--highlighted) 25%, transparent); }
+@media (max-width: 360px) {
+  #order-sticky { gap: 7px; padding: 7px 7px 7px 11px; }
+  #order-sticky .sticky-price strong { font-size: 18px; }
+  .sticky-price { gap: 5px; }
+  .sticky-price del { font-size: 12px; }
+  #order-sticky a { padding: 8px 10px; font-size: 12px; }
+}
+#comparison .comparison-banner:after, #how-it-works .how-symbol:after, #offer .offer-cta:after { display: none; }
+#comparison .comparison-vs, .order-summary-icon { background: transparent; color: var(--bg); }
+::selection { background: var(--highlighted); color: var(--bg); }
+input { accent-color: var(--highlighted); caret-color: var(--highlighted); }
+input::placeholder { color: var(--text-color); opacity: 1; }
+.page, .page > footer, .page > section:not(.banner), body { background: var(--main-bg); }
+.page > .banner, .page > section:not(.banner) { background: var(--bg); }
+.page > footer { background: var(--text-color); }
+.page > footer, .page > footer .footer-disclaimer, .page > footer .hero-brand, .page > footer p { color: var(--bg); }
+.page > footer .policy-links { border-color: var(--highlighted); }
+#before-after .card, #experiences .story, #faq .answer, #faq .faq, #faq .faq button, #guidance .cards .card, #guidance .doctor-profile, #how-it-works .how-copy, #ingredients .herb, #ingredients .herb-content, #offer .offer-details, #order-form .field input, #order-form .form-card, #product .benefit-list li, #product .product-description p, #quality .trust-card, #routine .routine-item, .concern-card:before { background: var(--main-bg); }
+#experiences .story-person h3, .page .section-head h2 { color: var(--text-color); }
+#ingredients .herb-visual, #quality .slimax-symbol, #routine .routine-number { background: var(--bg); color: var(--highlighted); }
+.page > footer .policy-links button { color: var(--bg); text-decoration-color: var(--highlighted); }
+.page > footer .policy-links button:focus-visible, .page > footer .policy-links button:hover { background: var(--bg); color: var(--highlighted); }
+/* Keep the footer and policy dialog light and simple. */
+.page > footer { background: var(--bg); color: var(--text-color); border-top: 1px solid var(--highlighted); }
+.page > footer, .page > footer .footer-disclaimer, .page > footer .hero-brand, .page > footer p { color: var(--text-color); }
+.page > footer .hero-brand { color: var(--highlighted); }
+.page > footer .policy-links { border-color: color-mix(in srgb, var(--highlighted) 25%, transparent); }
+.page > footer .policy-links button { color: var(--highlighted); text-decoration-color: var(--highlighted); }
+.pp-overlay { background: color-mix(in srgb, var(--text-color) 35%, transparent); backdrop-filter: blur(2px); }
+.pp-modal { background: var(--main-bg); border: 1px solid var(--highlighted); color: var(--text-color); }
+.pp-modal p, .pp-modal h3 { color: var(--text-color); }
+.pp-close { background: var(--bg); color: var(--highlighted); }
+#problem-section .concerns-grid { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: calc(clamp(76px, 20vw, 90px)); gap: 0 34px; padding: 20px 16px 24px; isolation: isolate; }
+#problem-section .concern-path { position: absolute; inset: 20px 16px 24px; width: calc(100% - 32px); height: calc(100% - 44px); overflow: visible; color: var(--highlighted); pointer-events: none; z-index: -1; }
+#problem-section .concern-card { --card-tilt: 8deg; display: flex; flex-direction: column; align-self: stretch; align-items: stretch; gap: 0; width: 100%; height: 100%; min-height: 0; padding: 22px 8px 8px; border: 1px solid var(--highlighted); border-radius: 16px; background: var(--main-bg); transform: rotate(var(--card-tilt)); isolation: auto; }
+#problem-section .concern-card:first-of-type { grid-area: 1/1 / span 2; }
+#problem-section .concern-card:nth-of-type(2) { grid-area: 2/2 / span 2; }
+#problem-section .concern-card:nth-of-type(3) { grid-area: 4/1 / span 2; }
+#problem-section .concern-card:nth-of-type(4) { grid-area: 5/2 / span 2; }
+#problem-section .concern-card:nth-of-type(5) { grid-area: 7/1 / span 2; }
+#problem-section .concern-card:nth-of-type(2n) { --card-tilt: -8deg; }
+#problem-section .concern-card:before { inset: auto; top: -7px; left: calc(50% - 9px); width: 18px; height: 18px; border: 3px solid var(--main-bg); border-radius: 50%; background: var(--highlighted); z-index: 2; }
+#problem-section .concern-card:not(:last-child):after { content: none; position: absolute; top: 100%; left: 65%; width: 53%; height: 60px; border-top: 1px dashed var(--highlighted); border-radius: 50%; transform: rotate(40deg); transform-origin: left top; pointer-events: none; z-index: -1; }
+#problem-section .concern-card:nth-child(2n):after { left: auto; right: 65%; transform: rotate(-40deg); transform-origin: right top; }
+#problem-section .concern-visual { flex: 1; min-height: 0; width: 100%; height: auto; aspect-ratio: auto; border-radius: 9px; }
+#problem-section .concern-visual img { position: absolute; inset: 0; }
+#problem-section .concern-number { position: absolute; display: grid; place-items: center; top: 5px; left: 5px; width: 23px; height: 23px; border-radius: 50%; background: var(--main-bg); color: var(--highlighted); font: 700 11px/1 Arial,
+          sans-serif; }
+#problem-section .concern-card .concern-copy { display: grid; place-items: center; min-height: 45px; padding: 8px 0 0; text-align: center; }
+#problem-section .concern-card .concern-copy h3 { margin: 0; color: var(--text-color); font-size: 15px !important; line-height: 1.4 !important; }
+#problem-section .concern-card.is-pressed, #problem-section .concern-card:active { transform: rotate(0deg) scale(0.985); }
+/* Static rectangular product introduction. */
+#product .section-head { text-align: center; margin-bottom: 22px; }
+#product .section-head h2 { margin-inline: auto; }
+#product .section-head .kicker { font: 700 11px/1.5 Arial, sans-serif; letter-spacing: 2px; margin-bottom: 10px; }
+#product .product-panel { display: grid; gap: 20px; }
+#product .product-showcase {
+  overflow: hidden;
+  border: 2px solid var(--highlighted);
+  border-radius: 18px 64px 18px 64px;
+  background: var(--main-bg);
+}
+#product .product-showcase-label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--highlighted);
+  color: var(--highlighted);
+  font-size: 12px;
+}
+#product .product-showcase-label span:first-child {
+  font: 800 18px/1.2 Arial, sans-serif;
+  letter-spacing: 2px;
+}
+#product .product-showcase-image {
+  display: block;
+  min-height: 0;
+  padding: 0;
+  background: var(--main-bg);
+}
+#product .product-showcase-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
+#product .product-showcase-image img[hidden] { display: none; }
+#product .product-showcase-caption {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-top: 1px solid var(--highlighted);
+  background: var(--bg);
+  color: var(--text-color);
+}
+#product .product-showcase-caption::before {
+  content: '✦';
+  display: grid;
+  place-items: center;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--highlighted);
+  border-radius: 50%;
+  color: var(--highlighted);
+  font-size: 13px;
+}
+#product .product-showcase-caption strong { font-size: 14px; line-height: 1.5; }
+#product .product-description { gap: 12px; margin: 0; }
+#product .product-description p,
+#product .product-description p + p {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+#product .product-benefits-title { margin: 0 0 -10px; color: var(--highlighted); font-weight: 700; font-size: 15px; }
+#product .benefit-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0; list-style: none; }
+#product .benefit-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  min-height: 110px;
+  padding: 12px 10px;
+  border: 1px solid var(--highlighted);
+  border-radius: 12px;
+  background: var(--main-bg);
+}
+#product .benefit-list li::before {
+  position: static;
+  transform: none;
+  flex: 0 0 22px;
+  border-radius: 50%;
+  background: var(--highlighted);
+  color: var(--main-bg);
+}
+#product *, #product *::before, #product *::after { animation: none; }
+/* Circular images and alternating text cards with dashed connectors. */
+#how-it-works .how-flow {
+  --circle-size: clamp(96px, 29vw, 130px);
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 28px;
+}
+#how-it-works .how-step {
+  display: grid;
+  grid-template-columns: var(--circle-size) minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+  min-height: var(--circle-size);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+  isolation: isolate;
+}
+#how-it-works .how-step:nth-child(even) {
+  grid-template-columns: minmax(0, 1fr) var(--circle-size);
+}
+#how-it-works .how-step::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 2px dashed var(--highlighted);
+  z-index: -1;
+  pointer-events: none;
+}
+#how-it-works .how-symbol {
+  grid-column: 1;
+  grid-row: 1;
+  box-sizing: border-box;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  min-width: 0;
+  min-height: 0;
+  aspect-ratio: 1;
+  padding: 5px;
+  border: 2px dashed var(--highlighted);
+  border-radius: 50%;
+  background: var(--bg);
+  overflow: hidden;
+}
+#how-it-works .how-symbol img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+#how-it-works .how-copy {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  min-width: 0;
+  min-height: 0;
+  padding: 16px 14px;
+  border: 1px solid var(--highlighted);
+  border-radius: 16px;
+  background: var(--main-bg);
+  text-align: left;
+}
+#how-it-works .how-step:nth-child(even) .how-symbol { grid-column: 2; grid-row: 1; }
+#how-it-works .how-step:nth-child(even) .how-copy { grid-column: 1; grid-row: 1; }
+#how-it-works .how-copy h3 {
+  margin: 0 0 6px;
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  color: var(--highlighted);
+}
+#how-it-works .how-copy p {
+  margin: 0;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: var(--text-color);
+}
+#how-it-works .how-step:hover .how-symbol,
+#how-it-works .how-step:active .how-symbol,
+#how-it-works .how-step:hover .how-symbol img { transform: none; }
+#how-it-works .how-step:hover .how-copy { border-color: var(--highlighted); }
+@media (max-width: 360px) {
+  #how-it-works .how-step { gap: 16px; }
+  #how-it-works .how-copy { padding: 12px 10px; }
+  #how-it-works .how-copy h3 { font-size: 15px !important; }
+}
+/* Ingredient cards retain their rounded 2x2 shape with consistent sizing. */
+#ingredients .herbs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 12px;
+}
+#ingredients .herb {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 6px;
+  border: 1px solid var(--highlighted);
+  border-radius: 20px;
+  background: var(--main-bg);
+}
+#ingredients .herb-visual {
+  flex: none;
+  width: 100%;
+  height: clamp(86px, 25vw, 110px);
+  aspect-ratio: auto;
+  border-radius: 13px;
+  background-size: cover;
+  background-position: center;
+}
+#ingredients .herb:nth-child(1) .herb-visual { background-image: url('images/ing1.avif'); }
+#ingredients .herb:nth-child(2) .herb-visual { background-image: url('images/ing2.avif'); }
+#ingredients .herb:nth-child(3) .herb-visual { background-image: url('images/ing3.avif'); }
+#ingredients .herb:nth-child(4) .herb-visual { background-image: url('images/ing4.avif'); }
+#ingredients .herb-content {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 44px;
+  padding: 8px 4px 4px;
+  border: 0;
+  background: var(--main-bg);
+}
+#ingredients .herb-content h3 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  text-align: center;
+}
+#ingredients .herb:hover, #ingredients .herb:active { transform: none; }
+@media (max-width: 360px) {
+  #ingredients .herbs { gap: 10px; }
+  #ingredients .herb { padding: 6px; }
+  #ingredients .herb-content h3 { font-size: 15px !important; }
+}
+/* Special-offer ticket in the existing blush and ruby palette. */
+#offer .special-ticket {
+  overflow: hidden;
+  border: 2px solid var(--highlighted);
+  border-radius: 24px;
+  background: var(--main-bg);
+}
+#offer .ticket-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--highlighted);
+  color: var(--main-bg);
+  font-size: 12px;
+}
+#offer .ticket-top span:first-child { font: 800 16px/1.4 Arial, sans-serif; letter-spacing: 2px; }
+#offer .ticket-body { position: relative; padding: 26px 20px 22px; }
+#offer .ticket-discount { display: grid; gap: 6px; color: var(--highlighted); padding-right: 85px; }
+#offer .ticket-discount > strong { font: 800 clamp(54px, 16vw, 70px)/1 Arial, sans-serif; letter-spacing: -3px; }
+#offer .ticket-discount strong span { font-size: .55em; letter-spacing: -1px; }
+#offer .ticket-discount > span { font-size: 18px; font-weight: 700; }
+#offer .ticket-seal {
+  position: absolute;
+  top: 24px;
+  right: 18px;
+  width: 80px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--highlighted);
+  color: var(--main-bg);
+  clip-path: polygon(50% 0, 61% 7%, 75% 6%, 82% 18%, 95% 25%, 93% 40%, 100% 50%, 93% 62%, 95% 75%, 82% 82%, 75% 95%, 61% 93%, 50% 100%, 38% 93%, 25% 95%, 18% 82%, 5% 75%, 7% 62%, 0 50%, 7% 38%, 5% 25%, 18% 18%, 25% 6%, 38% 7%);
+  transform: rotate(9deg);
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.35;
+}
+#offer .ticket-body h3 { margin: 20px 0 8px; color: var(--text-color); font-size: 16px; }
+#offer .ticket-body p { margin: 0; color: var(--text-color); font-size: 13.5px; }
+#offer .ticket-bottom { padding: 20px; border-top: 2px dashed var(--highlighted); background: var(--bg); }
+#offer .ticket-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--highlighted);
+  color: var(--main-bg);
+  font-weight: 700;
+  font-size: 15px;
+}
+#offer .ticket-button:hover { background: var(--text-color); }
+#offer .ticket-bottom p { margin: 10px 0 0; text-align: center; font-size: 12px !important; }
+#guidance .doctor-photo-frame { display: block; min-height: 0; background: var(--main-bg); }
+#guidance .doctor-photo-frame::before { content: none; }
+#guidance .recommendation-image { display: block; width: 100%; height: auto; }
+/* Premium order card */
+#order-form { padding: 46px 18px 54px; background: var(--bg); }
+#order-form .section-head { margin-bottom: 10px; }
+#order-form .section-head h2 { font-size: clamp(20px, 5.2vw, 23px) !important; letter-spacing: -.4px; }
+#order-form > p { max-width: 310px; margin: 0 auto 24px; text-align: center; color: var(--text-color); opacity: .78; font-size: 13.5px; }
+#order-form .form-card { max-width: 500px; margin: 0 auto; border: 1px solid color-mix(in srgb, var(--highlighted) 28%, transparent); border-radius: 28px; background: var(--main-bg); box-shadow: 0 18px 45px color-mix(in srgb, var(--highlighted) 16%, transparent); }
+#order-form .order-summary { padding: 18px 18px; background: var(--highlighted); border-radius: 26px 26px 0 0; }
+#order-form .order-summary-icon { border-color: var(--main-bg); background: var(--main-bg); color: var(--highlighted); }
+#order-form .order-summary-name strong { font-size: 16px; letter-spacing: .5px; }
+#order-form .order-summary-name small { color: var(--main-bg); opacity: .9; font-size: 11px; }
+#orderForm { padding: 22px 18px 20px; }
+#orderForm .order-fields-heading { margin: 0 0 18px; padding-bottom: 12px; border-bottom: 1px solid color-mix(in srgb, var(--highlighted) 20%, transparent); color: var(--highlighted); font-size: 15px; }
+#orderForm .field { margin-bottom: 15px; }
+#orderForm .field label { margin-bottom: 6px; color: var(--text-color); font-size: 12.5px; }
+#orderForm .field label i { width: 18px; color: var(--highlighted); }
+#orderForm .field input { min-height: 48px; padding: 10px 13px; border: 1px solid color-mix(in srgb, var(--highlighted) 26%, transparent); border-radius: 13px; background: var(--bg); color: var(--text-color); font-size: 14px; }
+#orderForm .field input:focus { border-color: var(--highlighted); outline: 2px solid color-mix(in srgb, var(--highlighted) 20%, transparent); }
+#orderForm .submit { width: 100%; margin-top: 20px; border: 0; border-radius: 14px; background: var(--highlighted); color: var(--main-bg); font-size: 15px; box-shadow: 0 10px 20px color-mix(in srgb, var(--highlighted) 22%, transparent); }
+#orderForm .secure { color: var(--text-color); opacity: .72; font-size: 12px; }
+/* Customer stories: clean premium testimonial stack */
+#experiences { padding: 48px 18px 54px; background: var(--main-bg); }
+#experiences .section-head { max-width: 520px; margin: 0 auto 26px; text-align: center; }
+#experiences .section-head h2 { font-size: clamp(20px, 5.2vw, 23px) !important; }
+#experiences .stories { max-width: 520px; margin: 0 auto; gap: 16px; }
+#experiences .story { min-height: 0; padding: 18px; border: 1px solid color-mix(in srgb, var(--highlighted) 22%, var(--main-bg)); border-left: 5px solid var(--highlighted); border-radius: 18px; background: var(--bg); box-shadow: 0 10px 26px color-mix(in srgb, var(--highlighted) 10%, transparent); }
+#experiences .story:before { display: none; }
+#experiences .story-head { align-items: center; gap: 12px; margin-bottom: 12px; }
+#experiences .story-photo { width: 56px; height: 56px; flex-basis: 56px; padding: 3px; border: 1px solid var(--highlighted); background: var(--main-bg); }
+#experiences .story-photo span { inset: 3px; background: var(--main-bg); color: var(--highlighted); font-size: 20px; }
+#experiences .story-person h3 { font-size: 16px; }
+#experiences .story-city { margin-top: 3px; color: var(--text-color); opacity: .7; font-size: 11.5px; }
+#experiences .story blockquote:before { height: 20px; font-size: 34px; line-height: .9; }
+#experiences .story p { margin: 4px 0 14px; font-size: 13.5px; line-height: 1.65; }
+#experiences .story-footer { padding-top: 10px; border-top: 1px solid color-mix(in srgb, var(--highlighted) 18%, transparent); }
+#experiences .stars { font-size: 14px; letter-spacing: 2px; }
+#guidance .section-head .kicker { letter-spacing: 0; }
+/* Compact section rhythm */
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) { padding: 24px 16px !important; }
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head { margin-bottom: 16px; }
+#problem-section .section-head { margin-bottom: 20px !important; }
+#product, #guidance, #offer, #order-form, #experiences { padding-top: 26px !important; padding-bottom: 30px !important; }
+#problem-section, #how-it-works, #ingredients, #before-after, #faq, #quality { padding-top: 24px !important; padding-bottom: 26px !important; }
+/* Consistent premium heading treatment for every content section. */
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head h2 {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding: 0 12px 16px;
+  color: var(--text-color);
+  font-size: clamp(20px, 5.2vw, 23px) !important;
+  font-weight: 700;
+  line-height: 1.38 !important;
+  letter-spacing: -.15px;
+  text-wrap: balance;
+}
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--highlighted);
+  transform: translateX(-50%) rotate(45deg);
+}
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  width: 100px;
+  max-width: 75%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--highlighted) 38%, transparent 38%, transparent 62%, var(--highlighted) 62%, transparent);
+  transform: translateX(-50%);
+}
+#problem-section .section-head h2 { max-width: 340px; }
+#product .product-description strong {
+  color: var(--highlighted);
+  font-weight: 700;
+  background: linear-gradient(transparent 68%, color-mix(in srgb, var(--highlighted) 16%, transparent) 68%);
+  padding-inline: 2px;
+}
+#disclaimer {
+  padding: 18px 16px !important;
+  background: var(--bg) !important;
+  opacity: .72;
+}
+#disclaimer h2 {
+  margin-bottom: 6px;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+#disclaimer p {
+  font-size: 10px !important;
+  line-height: 1.6 !important;
+  color: var(--text-color);
+  opacity: .78;
+}
+#guidance .section-head .kicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  border: 1px solid color-mix(in srgb, var(--highlighted) 38%, transparent);
+  border-radius: 999px;
+  background: var(--main-bg);
+  color: var(--highlighted);
+  font-size: 13px !important;
+  font-weight: 700;
+  line-height: 1.4 !important;
+  letter-spacing: 0;
+}
+/* Phone layout: preserve the desktop hierarchy without overflow. */
+@media (max-width: 600px) {
+  .page { width: 100%; max-width: var(--w); border-inline: 0; }
+  .page > section:not(.banner):not(#disclaimer):not(.disclaimer) { padding-inline: 14px !important; }
+  .page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head h2 {
+    max-width: 100%;
+    padding-inline: 5px;
+    font-size: clamp(19px, 5.2vw, 22px) !important;
+  }
+  .section-head { width: 100%; }
+  .section-head h2, .section-head p { overflow-wrap: anywhere; }
+  #problem-section .concerns-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; padding-inline: 9px; }
+  #problem-section .concern-card { padding-inline: 6px; border-radius: 14px; }
+  #problem-section .concern-card .concern-copy h3 { font-size: 15px !important; line-height: 1.35 !important; }
+  #product .product-showcase { width: 100%; }
+  #product .product-image-wrap, #product .product-image-wrap img { max-width: 100%; }
+  #product .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  #product .benefit-list li { min-height: 0; padding: 12px 10px; font-size: 13.5px !important; line-height: 1.6 !important; }
+  #how-it-works .how-step { gap: 12px; }
+  #how-it-works .how-symbol { min-height: 0; }
+  #how-it-works .how-copy h3 { font-size: 15px !important; }
+  #how-it-works .how-copy p { font-size: 13px !important; }
+  #ingredients .herbs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  #ingredients .herb { min-width: 0; }
+  #ingredients .herb-content h3 { font-size: 15px !important; }
+  #ingredients .herb-content p { font-size: 13px !important; }
+  #guidance .doctor-profile, #guidance .cards { width: 100%; }
+  #guidance .cards .card { min-width: 0; }
+  #offer .ticket-body { padding-inline: 16px; }
+  #offer .ticket-discount > strong { font-size: clamp(48px, 15vw, 64px); }
+  #before-after .before-after { grid-template-columns: 1fr; gap: 12px; }
+  #before-after .card { min-width: 0; padding: 14px 10px; }
+  #before-after ul { padding-left: 16px; font-size: 13px !important; }
+  #order-form .form-card { width: 100%; }
+  #orderForm { padding-inline: 15px; }
+  #experiences .story { padding: 16px 14px; }
+  #experiences .story p { font-size: 13.5px !important; }
+  #faq .faq button { gap: 8px; padding-inline: 14px; font-size: 14.5px !important; }
+  #faq .answer { margin-inline: 14px; font-size: 13.5px !important; }
+}
+/* Balanced square herb cards. */
+#ingredients .herbs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 14px;
+  padding: 6px 2px 10px;
+}
+#ingredients .herbs .herb {
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--main-bg);
+  box-shadow: 0 7px 18px color-mix(in srgb, var(--navy) 10%, transparent);
+}
+#ingredients .herbs .herb::after {
+  inset: 5px;
+  border: 1px solid color-mix(in srgb, var(--highlighted) 34%, transparent);
+  border-radius: 13px;
+}
+#ingredients .herbs .herb-visual {
+  inset: 0 0 auto;
+  height: 62%;
+  border-radius: 17px 17px 0 0;
+  background-color: var(--bg);
+}
+#ingredients .herbs .herb-content {
+  inset: auto 0 0;
+  min-height: 38%;
+  padding: 10px 12px 12px;
+  border-top: 1px solid var(--line);
+  background: var(--main-bg);
+  text-align: center;
+}
+#ingredients .herbs .herb-content h3 { font-size: 17px !important; }
+#ingredients .herbs .herb-content p { font-size: 13px !important; line-height: 1.5 !important; }
+@media (max-width: 600px) {
+  #ingredients .herbs { gap: 14px 10px; }
+  #ingredients .herbs .herb-content { padding: 8px 8px 10px; }
+  #ingredients .herbs .herb-content h3 { font-size: 15px !important; }
+  #ingredients .herbs .herb-content p { font-size: 12px !important; }
+}
+@media (max-width: 360px) {
+  .page > section:not(.banner):not(#disclaimer):not(.disclaimer) { padding-inline: 11px !important; }
+  #product .benefit-list { grid-template-columns: 1fr; }
+  #before-after .before-after { grid-template-columns: 1fr; }
+  #ingredients .herbs { gap: 8px; }
+  #problem-section .concerns-grid { gap: 0 13px; }
+  #problem-section .concern-card .concern-copy h3 { font-size: 14.5px !important; line-height: 1.35 !important; }
+}
+@media (max-width: 600px) {
+  .page > section:not(#disclaimer):not(.disclaimer) {
+    --text-heading: 21px;
+    --text-subheading: 15.5px;
+    --text-body: 13.5px;
+    --text-caption: 12px;
+  }
+  .page > section:not(#disclaimer):not(.disclaimer) .section-head h2 {
+    font-size: clamp(19px, 5.2vw, 22px) !important;
+    line-height: 1.38 !important;
+    overflow-wrap: normal;
+    text-wrap: balance;
+  }
+  .page > section:not(#disclaimer):not(.disclaimer) p { line-height: 1.65 !important; }
+  #problem-section .concerns-grid { grid-auto-rows: minmax(90px, auto); }
+  #problem-section .concern-card .concern-copy h3 { font-size: 15px !important; line-height: 1.35 !important; }
+  #problem-section .concern-copy { min-width: 0; }
+  #how-it-works .how-flow { --circle-size: clamp(112px, 32vw, 148px); gap: 24px; }
+  #how-it-works .how-copy { padding: 14px 10px; }
+  #how-it-works .how-step:nth-child(even) { gap: 12px; }
+  #before-after .card { min-height: 0; padding: 16px; }
+  #before-after ul { line-height: 1.7; }
+  #orderForm .field input { font-size: 14px !important; min-height: 48px; }
+  #orderForm .submit, #offer .ticket-button { font-size: 14.5px !important; min-height: 48px; }
+  #experiences .story-person h3 { font-size: 16px !important; }
+  #ingredients .herb-content { padding: 8px 4px; }
+}
+/* Keep phone card typography as readable as the desktop layout. */
+@media (max-width: 600px) {
+  #product .benefit-list li,
+  #how-it-works .how-copy p,
+  #ingredients .herb-content p,
+  #routine .routine-item p,
+  #before-after ul,
+  #experiences .story p { font-size: 13.5px !important; line-height: 1.65 !important; }
+  #how-it-works .how-copy h3,
+  #ingredients .herb-content h3,
+  #routine .routine-heading h3,
+  #quality .trust-card h3,
+  #experiences .story-person h3 { font-size: 16px !important; line-height: 1.35 !important; }
+  #faq { padding: 24px 14px 28px; }
+  #faq .section-head { margin-bottom: 16px; }
+  #faq .faq-list { gap: 10px; }
+  #faq .faq button { min-height: 56px; padding: 13px 14px; gap: 10px; font-size: 15px !important; line-height: 1.4 !important; }
+  #faq .faq button span { width: 26px; height: 26px; flex-basis: 26px; font-size: 17px; }
+  #faq .answer { margin-inline: 14px; padding: 12px 0 16px; font-size: 13.5px !important; line-height: 1.65 !important; }
+}
+/* Reference-inspired vertical problem cards. */
+#problem-section .concerns-grid { display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: 1fr; gap: 14px; padding: 4px 0 10px; }
+#problem-section .concern-path, #problem-section .concern-number { display: none; }
+#problem-section .concerns-grid .concern-card { display: grid; grid-area: auto; grid-template-columns: 35% minmax(0, 1fr); align-items: stretch; gap: 0; height: 100%; min-height: 156px; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--main-bg); transform: none; }
+#problem-section .concerns-grid .concern-card:before { content: none; }
+#problem-section .concerns-grid .concern-card:after { content: ""; position: absolute; inset: auto 20px -2px auto; width: 34px; height: 3px; border: 0; border-radius: 999px; background: var(--highlighted); transform: none; z-index: 1; }
+#problem-section .concerns-grid .concern-visual { grid-column: 1; grid-row: 1; align-self: stretch; width: 100%; height: auto; min-height: 0; border: 0; border-radius: 0; box-shadow: none; }
+#problem-section .concerns-grid .concern-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#problem-section .concerns-grid .concern-copy { display: flex; flex-direction: column; justify-content: center; align-items: center; grid-column: 2; grid-row: 1; min-height: 0; padding: 16px 14px; text-align: center; }
+#problem-section .concerns-grid .concern-copy h3 { margin: 0 0 6px; color: var(--text-color); font-size: 18px !important; line-height: 1.35 !important; text-align: center; }
+#problem-section .concerns-grid .concern-copy p { margin: 0; color: var(--navy); font-size: 16px !important; font-weight: 500; line-height: 1.6; text-align: center; }
+#how-it-works .how-copy h3 { text-align: center; }
+#problem-section .concerns-grid .concern-card { animation: concernReveal .65s cubic-bezier(.22, .8, .25, 1) both; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+#problem-section .concerns-grid .concern-card:nth-child(2) { animation-delay: .08s; }
+#problem-section .concerns-grid .concern-card:nth-child(3) { animation-delay: .16s; }
+#problem-section .concerns-grid .concern-card:nth-child(4) { animation-delay: .24s; }
+#problem-section .concerns-grid .concern-card:nth-child(5) { animation-delay: .32s; }
+#problem-section .concerns-grid .concern-card:nth-child(6) { animation-delay: .40s; }
+#problem-section .concerns-grid .concern-card:hover { transform: translateY(-5px); border-color: var(--highlighted); box-shadow: 0 12px 24px color-mix(in srgb, var(--text-color) 14%, transparent); }
+#problem-section .concerns-grid .concern-card:hover .concern-visual img { transform: scale(1.06); }
+@keyframes concernReveal { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 360px) {
+  #problem-section .concerns-grid .concern-card { grid-template-columns: 33% minmax(0, 1fr); min-height: 150px; }
+  #problem-section .concerns-grid .concern-copy { padding: 14px 12px; }
+  #problem-section .concerns-grid .concern-copy h3 { font-size: 15px !important; }
+  #problem-section .concerns-grid .concern-copy p { font-size: 13px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #problem-section .concerns-grid .concern-card { animation: none; transition: none; }
+  #problem-section .concerns-grid .concern-card:hover { transform: none; box-shadow: none; }
+  #problem-section .concerns-grid .concern-card:hover .concern-visual img { transform: none; }
+}
+/* Product introduction: one framed showcase and a numbered benefit grid. */
+#product .product-panel { gap: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 26px; background: var(--main-bg); box-shadow: 0 12px 28px color-mix(in srgb, var(--navy) 8%, transparent); }
+#product .product-showcase { width: 100%; border: 0; border-radius: 0; background: var(--bg); }
+#product .product-showcase-label { display: flex; justify-content: center; padding: 14px 16px; border: 0; background: var(--bg); color: var(--navy); text-align: center; }
+#product .product-showcase-label span:last-child { padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; font-size: 11px; }
+#product .product-showcase-image { padding: 0; }
+#product .product-showcase-image img { width: 100%; height: auto; object-fit: contain; }
+#product .product-description { gap: 12px; padding: 18px 16px 16px; }
+#product .product-description p { padding: 0; font-size: 16px !important; line-height: 1.7; }
+#product .product-description p + p { padding: 10px 12px; border-left: 3px solid var(--highlighted); border-radius: 0 12px 12px 0; background: var(--bg); font-size: 13px !important; }
+#product .product-benefits-title { display: flex; align-items: center; gap: 12px; margin: 0; padding: 0 16px 12px; color: var(--navy); font-size: 15px; }
+#product .product-benefits-title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+#product .benefit-list { counter-reset: product-benefit; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 10px; padding: 0 14px 18px; }
+#product .benefit-list li { counter-increment: product-benefit; gap: 8px; min-height: 0; padding: 12px 10px; border: 1px dashed var(--highlighted); border-radius: 14px; background: var(--bg); font-size: 13.5px !important; line-height: 1.6 !important; }
+#product .benefit-list li::before { content: counter(product-benefit, decimal-leading-zero); position: static; width: 26px; height: 26px; flex: 0 0 26px; border-radius: 8px; background: var(--main-bg); color: var(--highlighted); font: 700 12px/1 Arial, sans-serif; }
+@media (max-width: 360px) {
+  #product .product-description { padding: 16px 12px 14px; }
+  #product .product-showcase-label { padding: 12px; gap: 6px; }
+  #product .benefit-list { gap: 8px; padding-inline: 10px; }
+}
+#product .product-showcase { animation: productReveal .7s ease both; }
+#product .product-description { animation: productReveal .7s .12s ease both; }
+#product .benefit-list li { animation: productReveal .55s ease both; transition: transform .25s ease, box-shadow .25s ease; }
+#product .benefit-list li:nth-child(1) { animation-delay: .18s; }
+#product .benefit-list li:nth-child(2) { animation-delay: .26s; }
+#product .benefit-list li:nth-child(3) { animation-delay: .34s; }
+#product .benefit-list li:nth-child(4) { animation-delay: .42s; }
+#product .benefit-list li:hover { transform: translateY(-4px); box-shadow: 0 9px 18px color-mix(in srgb, var(--navy) 12%, transparent); }
+@keyframes productReveal { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  #product .product-showcase, #product .product-description, #product .benefit-list li { animation: none; transition: none; }
+  #product .benefit-list li:hover { transform: none; box-shadow: none; }
+}
+/* Alternating image-and-copy timeline. */
+#how-it-works { padding-inline: 12px; }
+#how-it-works .how-flow { position: relative; gap: 26px; grid-auto-rows: auto; isolation: isolate; }
+#how-it-works .how-flow::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; border-left: 1px dashed var(--highlighted); transform: translateX(-50%); opacity: .65; z-index: -1; }
+#how-it-works .how-flow .how-step { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 34px; min-height: 0; padding: 0; }
+#how-it-works .how-flow .how-step::before { display: none; }
+#how-it-works .how-flow .how-step::after { content: ""; position: absolute; inset: 50% auto auto 50%; width: 12px; height: 12px; border: 3px solid var(--main-bg); border-radius: 50%; background: var(--highlighted); box-shadow: 0 0 0 1px var(--highlighted); transform: translate(-50%, -50%); z-index: 2; }
+#how-it-works .how-flow .how-symbol { width: 100%; max-width: 176px; height: auto; min-height: 0; aspect-ratio: 1; justify-self: center; align-self: center; padding: 4px; border: 1px solid var(--line); border-radius: 18px; background: var(--main-bg); box-shadow: 0 6px 16px color-mix(in srgb, var(--navy) 8%, transparent); }
+#how-it-works .how-flow .how-symbol img { position: absolute; inset: 4px; width: calc(100% - 8px); height: calc(100% - 8px); min-height: 0; border-radius: 13px; object-fit: cover; object-position: center; }
+#how-it-works .how-flow .how-copy { padding: 14px 10px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); text-align: center; }
+#how-it-works .how-flow .how-copy h3 { font-size: 18px !important; line-height: 1.35 !important; color: var(--highlighted); }
+#how-it-works .how-flow .how-copy p { font-size: 16px !important; line-height: 1.6 !important; }
+@media (max-width: 360px) {
+  #how-it-works .how-flow .how-step { gap: 26px; }
+  #how-it-works .how-flow .how-copy { padding: 12px 8px; }
+  #how-it-works .how-flow .how-copy h3 { font-size: 15px !important; }
+  #how-it-works .how-flow .how-copy p { font-size: 12.5px !important; }
+}
+/* Circular ingredient medallions. */
+#ingredients .herbs { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: auto; gap: 22px 16px; padding: 6px 2px 10px; }
+#ingredients .herbs .herb { position: relative; display: block; width: 100%; aspect-ratio: 1; padding: 0; overflow: hidden; border: 2px solid var(--line); border-radius: 50%; background: var(--bg); box-shadow: 0 7px 18px color-mix(in srgb, var(--navy) 10%, transparent); transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+#ingredients .herbs .herb::after { content: ""; position: absolute; inset: 5px; border: 1px solid color-mix(in srgb, var(--highlighted) 45%, transparent); border-radius: 50%; pointer-events: none; }
+#ingredients .herbs .herb-visual { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 50%; background-size: cover; background-position: center; }
+#ingredients .herbs .herb-content { position: absolute; inset: auto 0 0; min-height: 0; padding: 10px 14% 16px; border-top: 1px solid var(--line); background: var(--bg); }
+#ingredients .herbs .herb-content h3 { color: var(--text-color); font-size: 16px !important; line-height: 1.35 !important; }
+@media (hover: hover) and (pointer: fine) {
+  #ingredients .herbs .herb:hover { transform: translateY(-4px); border-color: var(--highlighted); box-shadow: 0 10px 22px color-mix(in srgb, var(--navy) 14%, transparent); }
+}
+@media (max-width: 360px) {
+  #ingredients .herbs { gap: 18px 12px; }
+  #ingredients .herbs .herb-content { padding: 8px 12% 14px; }
+  #ingredients .herbs .herb-content h3 { font-size: 15px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #ingredients .herbs .herb { transition: none; transform: none; }
+}
+#certificates { background: var(--bg); }
+#certificates .certificate-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+#certificates .certificate-card { position: relative; display: flex; flex-direction: column; margin: 0; aspect-ratio: 4 / 3; padding: 5px; border: 1px dashed var(--highlighted); border-radius: 16px; background: var(--main-bg); overflow: hidden; }
+#certificates .certificate-placeholder { position: absolute; inset: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--muted); text-align: center; font-size: 13px; }
+#certificates .certificate-placeholder i { color: var(--highlighted); font-size: 28px; }
+#certificates .certificate-card img { position: relative; display: block; width: 100%; min-height: 0; flex: 1; object-fit: contain; background: var(--main-bg); border-radius: 8px; transform: scale(1.04); }
+#certificates .certificate-card figcaption { display: flex; align-items: center; justify-content: center; flex: 0 0 38px; padding: 4px 2px 2px; color: var(--text-color); font-size: 16px; font-weight: 700; line-height: 1.3; text-align: center; }
+#certificates .certificate-card img[hidden], #certificates .certificate-card.is-loaded .certificate-placeholder { display: none; }
+@media (max-width: 360px) {
+  #certificates .certificate-grid { gap: 10px; }
+  #certificates .certificate-card { padding: 6px; }
+}
+#offer .offer-deal { overflow: hidden; padding: 0; text-align: center; color: var(--text-color); border: 1px solid var(--line); border-top: 5px solid var(--highlighted); border-radius: 24px; background: var(--main-bg); box-shadow: 0 12px 28px color-mix(in srgb, var(--navy) 12%, transparent); }
+#offer .offer-deal::before { content: none; }
+#offer .deal-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; padding: 16px 18px; background: var(--main-bg); color: var(--navy); font-size: 12.5px; }
+#offer .deal-header > span:first-child { font: 800 17px/1.2 Arial, sans-serif; letter-spacing: 2px; }
+#offer .deal-feature { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 10px 18px 20px; background: radial-gradient(ellipse at center, var(--bg), var(--main-bg) 75%); }
+#offer .deal-discount { display: inline-flex; flex-direction: row; align-items: center; gap: 6px; padding: 7px 15px; border: 1px dashed var(--highlighted); border-radius: 999px; background: var(--bg); color: var(--highlighted); }
+#offer .deal-discount > strong { font: 800 20px/1 Arial, sans-serif; letter-spacing: 0; }
+#offer .deal-discount strong span { font-size: 17px; letter-spacing: 0; }
+#offer .deal-discount > span { font-size: 13px; font-weight: 600; }
+#offer .deal-price { display: grid; grid-template-columns: auto auto; justify-content: center; align-items: baseline; gap: 6px 10px; color: var(--text-color); }
+#offer .deal-price > strong { grid-column: 1 / -1; }
+#offer .deal-price > span { font-size: 12px; }
+#offer .deal-price del { color: var(--muted); font-size: 14px; }
+#offer .deal-price > strong { color: var(--highlighted); font: 800 clamp(42px, 12vw, 54px)/1.15 Arial, sans-serif; letter-spacing: -1.5px; white-space: nowrap; }
+#offer .deal-price strong span { font-size: 17px; }
+#offer .deal-saving { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 0 18px; padding: 10px; border: 1px solid color-mix(in srgb, var(--highlighted) 25%, transparent); border-radius: 12px; background: var(--bg); color: var(--text-color); font-size: 14px; }
+#offer .deal-saving strong { color: var(--highlighted); font-size: 17px; }
+#offer .deal-action { padding: 18px; text-align: center; }
+#offer .deal-action a { display: flex; align-items: center; justify-content: center; gap: 16px; min-height: 48px; padding: 10px; border-radius: 14px; background: var(--highlighted); color: var(--main-bg); font-size: 16px; font-weight: 700; }
+#offer .deal-action a:hover { background: var(--highlighted); color: var(--main-bg); }
+#offer .deal-action a span { font: 20px/1 Arial, sans-serif; }
+#offer .deal-action p { margin-top: 10px; font-size: 12px; color: var(--muted); }
+#offer .offer-deal { animation: offerReveal .7s cubic-bezier(.22,.8,.25,1) both; }
+#offer .deal-discount { animation: offerPulse 2.4s ease-in-out infinite; }
+#offer .deal-action a { transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
+#offer .deal-action a:hover { transform: translateY(-3px); box-shadow: 0 10px 20px color-mix(in srgb, var(--highlighted) 28%, transparent); background: var(--highlighted); }
+@keyframes offerReveal {
+  from { opacity: 0; transform: translateY(18px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes offerPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #offer .offer-deal, #offer .deal-discount { animation: none; }
+  #offer .deal-action a { transition: none; }
+  #offer .deal-action a:hover { transform: none; box-shadow: none; }
+}
+/* Customer experience cards: portrait header and inset review panel. */
+#experiences .stories { gap: 20px; }
+#experiences .story { display: flex; flex-direction: column; padding: 20px; border: 1px solid color-mix(in srgb, var(--highlighted) 22%, var(--main-bg)); border-radius: 24px; background: var(--main-bg); box-shadow: 0 8px 24px rgba(56, 37, 42, .06); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+#experiences .story-head { gap: 14px; margin-bottom: 16px; align-items: center; }
+#experiences .story-photo { width: 70px; height: 70px; flex-basis: 70px; padding: 3px; border: 1px solid color-mix(in srgb, var(--highlighted) 45%, transparent); border-radius: 20px; background: var(--main-bg); box-shadow: 3px 3px 0 color-mix(in srgb, var(--highlighted) 14%, var(--main-bg)); }
+#experiences .story-photo img, #experiences .story-photo span { border-radius: 17px; }
+#experiences .story-person h3 { font-size: 17px !important; line-height: 1.35 !important; color: var(--text-color); }
+#experiences .story-city { margin-top: 4px; opacity: 1; color: var(--muted); font-size: 12px !important; flex-wrap: wrap; }
+#experiences .story-city i { color: var(--highlighted); }
+#experiences .story blockquote { position: relative; padding: 20px 16px 16px; border-radius: 16px; background: color-mix(in srgb, var(--highlighted) 6%, var(--main-bg)); }
+#experiences .story blockquote:before { position: absolute; top: -11px; left: 14px; height: 26px; font-size: 44px; line-height: 1; color: var(--highlighted); }
+#experiences .story p { margin: 0; color: var(--text-color); font-size: 16px !important; line-height: 1.7 !important; }
+#experiences .story-footer { justify-content: center; margin-top: 16px; padding-top: 12px; border-top: 1px dashed color-mix(in srgb, var(--highlighted) 30%, transparent); }
+#experiences .story-footer { display: none; }
+#experiences .stars { padding: 4px 14px; border-radius: 999px; background: color-mix(in srgb, var(--highlighted) 9%, var(--main-bg)); color: var(--highlighted); font-size: 16px; letter-spacing: 3px; }
+@media (hover: hover) and (pointer: fine) {
+  #experiences .story:hover { transform: translateY(-4px); border-color: var(--highlighted); box-shadow: 0 14px 30px color-mix(in srgb, var(--highlighted) 14%, transparent); }
+}
+@media (max-width: 360px) {
+  #experiences .story { padding: 16px; }
+  #experiences .story-head { gap: 10px; }
+  #experiences .story-photo { width: 60px; height: 60px; flex-basis: 60px; }
+  #experiences .story-person h3 { font-size: 16px !important; }
+  #experiences .story blockquote { padding-inline: 12px; }
+}
+/* Compact footer */
+.page > footer .policy-links { margin: 12px auto 8px; padding-top: 6px; }
+.page > footer .policy-links button { min-height: 28px; padding: 3px 7px; font-size: 11px; opacity: .72; text-underline-offset: 2px; }
+.page > footer > p { font-size: 11px; opacity: .62; line-height: 1.4; }
+.page > footer .footer-disclaimer { display: none; }
+#disclaimer { margin-bottom: 0; border-bottom: 0 !important; }
+.page > footer { margin-top: 0; padding-top: 8px; border-top: 0 !important; background: var(--cream); }
+#disclaimer { padding-bottom: 8px; }
+#disclaimer { padding-top: 10px; }
+#disclaimer h2 { margin-bottom: 4px; }
+#disclaimer p { line-height: 1.45; }
+.page > footer .policy-links { margin-top: 4px; margin-bottom: 4px; }
+.page > footer > p { margin-top: 0; }
+.page > footer .policy-links { border-top: 0; }
+/* Improve readability for every concern card. */
+#problem-section .concerns-grid .concern-copy h3,
+#problem-section .concerns-grid .concern-copy p {
+  color: #000;
+}
+/* Dashed corner borders for each concern card. */
+#problem-section .concerns-grid .concern-card {
+  border: 1px dashed var(--highlighted);
+}
+#problem-section .concerns-grid .concern-card:nth-of-type(1) {
+  border-left: 4px dashed var(--highlighted);
+}
+#problem-section .concerns-grid .concern-card:nth-of-type(2) {
+  border-color: #d09b78;
+  border-style: dashed;
+}
+#problem-section .concerns-grid .concern-card:nth-of-type(3) {
+  border-color: #c89478;
+  border-style: dashed;
+}
+#problem-section .concerns-grid .concern-card:nth-of-type(4) {
+  border-color: #8f5d58;
+  border-top: 3px dashed #8f5d58;
+}
+#problem-section .concerns-grid .concern-card:nth-of-type(5) {
+  border-color: var(--highlighted);
+  border-style: dashed;
+}
+/* Keep the border treatment identical across every card. */
+#problem-section .concerns-grid .concern-card {
+  border: 1px dashed var(--highlighted) !important;
+}
+/* Women-focused product introduction. */
+#product .product-kicker { display: inline-flex; margin-bottom: 8px; padding: 4px 10px; border: 1px solid var(--highlighted); border-radius: 999px; color: var(--highlighted); font-size: 12px; font-weight: 700; }
+#product .product-panel { border-color: var(--highlighted); background: linear-gradient(145deg, #fffdf9, #f7e8df); }
+#product .product-showcase { position: relative; background: #f3dfd5; }
+#product .product-showcase-label { background: var(--highlighted); color: #fff; letter-spacing: 1.5px; }
+#product .product-description { padding: 14px 12px 12px; }
+#product .product-description h3 { margin-bottom: 6px; color: #000; font-size: 18px; letter-spacing: .3px; }
+#product .product-description p { color: #000; font-size: 14px; line-height: 1.7; }
+#product .product-benefits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 12px; list-style: none; }
+#product .product-benefits li { display: flex; align-items: center; gap: 8px; min-height: 64px; padding: 9px 8px; border: 1px solid #ead0c4; border-radius: 14px; background: #fffdf9; }
+#product .product-benefits li > i { display: grid; place-items: center; flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; background: #f3dfd5; color: var(--highlighted); font-size: 14px; }
+#product .product-benefits span { display: grid; gap: 2px; }
+#product .product-benefits strong { color: #000; font-size: 15px; line-height: 1.3; }
+#product .product-benefits small { color: #000; font-size: 11px; line-height: 1.35; }
+@media (max-width: 360px) { #product .product-benefits { grid-template-columns: 1fr; } }
+/* Product image focus and clean benefit cards. */
+#product .product-showcase-image {
+  position: relative;
+  padding: 14px;
+  overflow: hidden;
+}
+#product .product-showcase-image:after {
+  content: "";
+  position: absolute;
+  inset: 18% 12%;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--highlighted) 18%, transparent);
+  filter: blur(24px);
+  z-index: 0;
+}
+#product .product-showcase-image img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 16px 28px color-mix(in srgb, var(--navy) 18%, transparent);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+#product .product-description h3 { text-align: center; }
+#product .product-benefits li {
+  background: transparent;
+  border-color: #ead0c4;
+}
+#product .product-benefits li {
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+#product .product-benefits li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, color-mix(in srgb, var(--highlighted) 12%, transparent), transparent);
+  transform: skewX(-18deg);
+  transition: left .45s ease;
+  pointer-events: none;
+}
+#product .product-benefits li > i,
+#product .product-benefits li span {
+  position: relative;
+  z-index: 1;
+}
+#product .product-benefits li > i { transition: transform .25s ease, color .25s ease; }
+@media (hover: hover) and (pointer: fine) {
+  #product .product-benefits li:hover {
+    transform: translateY(-3px);
+    border-color: var(--highlighted);
+    box-shadow: 0 8px 16px color-mix(in srgb, var(--highlighted) 16%, transparent);
+  }
+  #product .product-benefits li:hover:after { left: 120%; }
+  #product .product-benefits li:hover > i { transform: scale(1.12) rotate(-6deg); color: var(--navy); }
+}
+#product .product-benefits li:active { transform: scale(.98); }
+@media (hover: hover) and (pointer: fine) {
+  #product .product-showcase-image img:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 20px 34px color-mix(in srgb, var(--navy) 24%, transparent);
+  }
+}
+/* Final visual treatment for the how-it-works timeline. */
+#how-it-works .how-flow {
+  --timeline-accent: var(--highlighted);
+  --timeline-line: color-mix(in srgb, var(--highlighted) 62%, var(--main-bg));
+  position: relative;
+  isolation: isolate;
+  gap: 30px;
+}
+#how-it-works .how-flow::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  bottom: 5%;
+  width: 3px;
+  background: repeating-linear-gradient(to bottom, var(--timeline-line) 0 9px, transparent 9px 17px);
+  transform: translateX(-50%);
+  opacity: .9;
+  z-index: -1;
+}
+#how-it-works .how-flow .how-step {
+  position: relative;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 30px;
+  min-height: 0;
+}
+#how-it-works .how-flow .how-step::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--main-bg);
+  border-radius: 50%;
+  background: var(--timeline-accent);
+  box-shadow: 0 0 0 2px var(--timeline-accent), 0 4px 12px color-mix(in srgb, var(--navy) 18%, transparent);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+#how-it-works .how-flow .how-symbol {
+  position: relative;
+  width: min(100%, 150px);
+  aspect-ratio: 1;
+  padding: 6px;
+  border: 2px solid var(--main-bg);
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--highlighted), var(--blue));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--timeline-accent) 72%, transparent), 0 10px 20px color-mix(in srgb, var(--navy) 13%, transparent);
+  overflow: visible;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+#how-it-works .how-flow .how-symbol::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border: 1px dashed color-mix(in srgb, var(--highlighted) 48%, transparent);
+  border-radius: 50%;
+  transform: rotate(-18deg);
+  pointer-events: none;
+}
+#how-it-works .how-flow .how-symbol img {
+  position: static;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#how-it-works .how-flow .how-copy {
+  align-self: center;
+  padding: 16px 18px;
+  border: 1px solid color-mix(in srgb, var(--highlighted) 42%, var(--line));
+  border-radius: 20px 8px 20px 8px;
+  background: color-mix(in srgb, var(--main-bg) 92%, var(--highlighted));
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--navy) 8%, transparent);
+  text-align: left;
+}
+#how-it-works .how-flow .how-step:nth-child(even) .how-copy { text-align: right; }
+#how-it-works .how-flow .how-copy h3 { color: var(--highlighted); }
+#how-it-works .how-step:hover .how-symbol { transform: translateY(-3px) scale(1.015); box-shadow: 0 0 0 1px color-mix(in srgb, var(--highlighted) 58%, transparent), 0 10px 18px color-mix(in srgb, var(--navy) 13%, transparent); }
+@media (max-width: 600px) {
+  #how-it-works .section-head h2 {
+    font-size: clamp(19px, 5.2vw, 22px) !important;
+    line-height: 1.38 !important;
+    letter-spacing: 0 !important;
+    padding-inline: 2px;
+  }
+  #how-it-works .how-flow { gap: 24px; }
+  #how-it-works .how-flow .how-step { gap: 20px; }
+  #how-it-works .how-flow .how-symbol { width: min(100%, 124px); padding: 5px; }
+  #how-it-works .how-flow .how-symbol::after { inset: -5px; }
+  #how-it-works .how-flow .how-copy { padding: 12px 10px; border-radius: 16px 6px 16px 6px; }
+  #how-it-works .how-flow .how-copy h3 { font-size: 15px !important; }
+  #how-it-works .how-flow .how-copy p { font-size: 13px !important; }
+}
+/* Final square treatment for the herb cards. */
+#ingredients .herbs .herb {
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+}
+#ingredients .herbs .herb::after { border-radius: 13px; }
+#ingredients .herbs .herb-visual { inset: 0 0 auto; height: 62%; border-radius: 17px 17px 0 0; }
+#ingredients .herbs .herb-content { inset: auto 0 0; min-height: 38%; padding: 10px 12px 12px; border-radius: 0 0 17px 17px; text-align: center; }
+#ingredients .herbs .herb-content h3 { font-size: 17px !important; }
+#ingredients .herbs .herb-content p { font-size: 13px !important; line-height: 1.5 !important; }
+@media (max-width: 600px) {
+  #ingredients .herbs { gap: 14px 10px; }
+  #ingredients .herbs .herb-content { padding: 8px 8px 10px; }
+  #ingredients .herbs .herb-content h3 { font-size: 15px !important; }
+  #ingredients .herbs .herb-content p { font-size: 12px !important; }
+}
+#ingredients .herbs .herb {
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 14px color-mix(in srgb, var(--navy) 7%, transparent);
+}
+#ingredients .herbs .herb::after { display: none; }
+#ingredients .herbs .herb-visual { border-radius: 12px 12px 0 0; }
+#ingredients .herbs .herb-content { border-top: 0; border-radius: 0 0 12px 12px; }
+#ingredients .herbs .herb-visual img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+/* Circular certificate badges. */
+#certificates .certificate-grid { gap: 18px 14px; }
+#certificates .certificate-card {
+  aspect-ratio: 1 / 1;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--main-bg);
+  box-shadow: 0 7px 18px color-mix(in srgb, var(--navy) 10%, transparent);
+}
+#certificates .certificate-placeholder { inset: 12px; border-radius: 50%; }
+#certificates .certificate-card img {
+  position: absolute;
+  inset: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border-radius: 50%;
+  object-fit: contain;
+}
+#certificates .certificate-card figcaption {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  min-height: 34px;
+  padding: 7px 8px;
+  border-radius: 0 0 999px 999px;
+  background: color-mix(in srgb, var(--main-bg) 88%, transparent);
+  font-size: 13px;
+  line-height: 1.2;
+}
+@media (max-width: 600px) {
+  #certificates .certificate-grid { gap: 12px 10px; }
+  #certificates .certificate-card { padding: 6px; }
+  #certificates .certificate-card img { inset: 6px; width: calc(100% - 12px); height: calc(100% - 12px); }
+  #certificates .certificate-card figcaption { right: 6px; bottom: 6px; left: 6px; font-size: 11px; }
+}
+/* Simple discount-only offer card. */
+#offer .offer-deal {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  border-radius: 26px;
+  background: linear-gradient(135deg, var(--main-bg) 0 58%, var(--highlighted) 58% 100%);
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--navy) 14%, transparent);
+}
+#offer .offer-deal::before {
+  content: "SPECIAL";
+  position: absolute;
+  top: 20px;
+  right: -38px;
+  z-index: 2;
+  width: 142px;
+  padding: 7px 0;
+  background: var(--highlighted);
+  color: var(--main-bg);
+  font: 700 11px/1 Arial, sans-serif;
+  letter-spacing: 1.4px;
+  text-align: center;
+  transform: rotate(36deg);
+}
+#offer .deal-header {
+  position: relative;
+  z-index: 1;
+  padding: 19px 20px;
+  background: transparent;
+  border-bottom: 1px solid color-mix(in srgb, var(--highlighted) 22%, transparent);
+}
+#offer .deal-header > span:last-child { color: var(--highlighted); font-weight: 700; }
+#offer .deal-feature { position: relative; z-index: 1; gap: 16px; padding: 30px 20px 26px; }
+#offer .deal-discount { padding: 12px 22px; border-style: solid; }
+#offer .deal-discount > strong { font-size: 42px; }
+#offer .offer-message { max-width: 320px; margin: 0; color: var(--text-color); font-size: 16px; line-height: 1.6; text-align: center; }
+#offer .deal-action { position: relative; z-index: 1; padding: 16px 20px 22px; background: color-mix(in srgb, var(--main-bg) 90%, transparent); }
+#offer .deal-action a { border-radius: 999px; }
+#offer .deal-action p { color: var(--text-color); }
+#offer .offer-deal, #offer .deal-feature { background: var(--main-bg); }
+#offer .offer-deal::before,
+#offer .deal-feature::before,
+#offer .deal-feature::after { display: none; }
+#offer .countdown { position: relative; z-index: 5; }
+#offer .countdown > span { position: relative; z-index: 6; background: var(--main-bg); }
+#experiences .stories { gap: 18px; }
+#experiences .story { position: relative; min-height: 190px; padding: 18px; border: 0; border-radius: 20px; background: var(--main-bg); box-shadow: 0 8px 22px color-mix(in srgb, var(--navy) 10%, transparent); }
+#experiences .story::before { content: "“"; position: absolute; top: 8px; right: 16px; color: color-mix(in srgb, var(--highlighted) 25%, transparent); font: 700 50px/1 Georgia, serif; }
+#experiences .story-head { margin-bottom: 8px; }
+#experiences .story-photo { width: 58px; height: 58px; flex-basis: 58px; border-radius: 50%; box-shadow: none; }
+#experiences .story-photo img, #experiences .story-photo span { border-radius: 50%; }
+#experiences .story blockquote { display: block; margin: 12px 0 0; padding: 12px 13px; border-radius: 14px; background: color-mix(in srgb, var(--highlighted) 6%, var(--main-bg)); }
+#experiences .story blockquote::before { display: none; }
+#experiences .story blockquote p { margin: 0; color: var(--text-color); font-size: 15px !important; line-height: 1.65 !important; }
+@media (max-width: 600px) {
+  #experiences .story blockquote p { font-size: 14px !important; line-height: 1.65 !important; }
+}
+#experiences .story-footer { display: flex; justify-content: flex-start; margin-top: auto; padding-top: 14px; border-top: 1px solid color-mix(in srgb, var(--highlighted) 18%, transparent); }
+#experiences .stars { padding: 0; background: transparent; color: var(--highlighted); font-size: 18px; letter-spacing: 2px; }
+#offer .countdown { gap: 12px; margin: 20px 0 8px; }
+#offer .countdown > span { min-width: 78px; padding: 12px 8px 10px; border: 1px solid color-mix(in srgb, var(--highlighted) 30%, transparent); border-radius: 14px; background: var(--bg); }
+#offer .countdown strong { font-size: 34px; }
+#offer .offer-stickers { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 8px; }
+#offer .offer-stickers span { padding: 7px 11px; border: 1px solid color-mix(in srgb, var(--highlighted) 34%, transparent); border-radius: 999px; background: var(--main-bg); color: var(--text-color); font-size: 12px; font-weight: 700; }
+@media (max-width: 600px) {
+  #offer .offer-deal { background: var(--main-bg); }
+  #offer .deal-header { padding: 17px 16px; }
+  #offer .deal-feature { padding: 26px 14px 22px; }
+  #offer .deal-discount > strong { font-size: 38px; }
+  #offer .offer-message { font-size: 14px; }
+  #offer .deal-action { padding-inline: 14px; }
+  #offer .countdown { gap: 7px; }
+  #offer .countdown > span { min-width: 68px; padding: 10px 5px 8px; }
+  #offer .countdown strong { font-size: 29px; }
+  #offer .offer-stickers span { font-size: 11px; }
+}
+#offer .section-head h2,
+#order-form .section-head h2 {
+  font-size: clamp(28px, 7.5vw, 36px) !important;
+  line-height: 1.3 !important;
+  letter-spacing: -.2px;
+}
+@media (max-width: 600px) {
+  #offer .section-head h2,
+  #order-form .section-head h2 {
+    font-size: clamp(27px, 8vw, 33px) !important;
+    line-height: 1.35 !important;
+    letter-spacing: 0;
+  }
+}
+#faq .faq-list { gap: 14px; }
+#faq .faq { overflow: hidden; border: 0; border-radius: 18px; background: var(--main-bg); box-shadow: 0 7px 18px color-mix(in srgb, var(--navy) 9%, transparent); }
+#faq .faq button { min-height: 64px; padding: 16px 18px; background: var(--main-bg); color: var(--text-color); font-size: 16px !important; font-weight: 700; }
+#faq .faq button::before { content: "?"; display: grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; border-radius: 50%; background: var(--highlighted); color: var(--main-bg); font-size: 16px; font-weight: 800; }
+#faq .faq button span { width: 30px; height: 30px; flex-basis: 30px; border-radius: 50%; background: color-mix(in srgb, var(--highlighted) 12%, var(--main-bg)); color: var(--highlighted); }
+#faq .answer { margin: 0 18px; padding: 14px 0 18px; border-top: 1px dashed color-mix(in srgb, var(--highlighted) 35%, transparent); color: var(--text-color); font-size: 15px !important; line-height: 1.7; }
+#how-it-works .section-head h2::before,
+#how-it-works .section-head h2::after,
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head h2::before,
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head h2::after {
+  transform: translateX(-50%);
+}
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head h2::before {
+  bottom: 3px;
+  width: 108px;
+  height: 1px;
+  background: repeating-linear-gradient(to right, var(--highlighted) 0 5px, transparent 5px 10px);
+}
+.page > section:not(.banner):not(#disclaimer):not(.disclaimer) .section-head h2::after {
+  bottom: -2px;
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--highlighted);
+  border-radius: 50%;
+  background: var(--main-bg);
+  transform: translateX(-50%);
+}
+#order-sticky { justify-content: center; padding: 8px; border: 0; background: transparent; box-shadow: none; }
+#order-sticky a { display: flex; width: 100%; max-width: none; min-height: 48px; align-items: center; justify-content: center; border-radius: 12px; background: var(--highlighted); color: var(--main-bg); font-size: 16px; box-shadow: 0 8px 18px color-mix(in srgb, var(--highlighted) 25%, transparent); }
+#order-form { padding: 12px 12px 16px !important; }
+#order-form .section-head { margin-bottom: 10px !important; }
+#order-form > p { margin: 0 0 12px; }
+#order-form > p { text-align: center; }
+@media (max-width: 600px) {
+  #faq .faq button { min-height: 60px; padding: 14px; font-size: 15px !important; }
+  #faq .answer { margin-inline: 14px; font-size: 14px !important; }
+  #order-sticky a { width: 100%; min-width: 0; }
+}
+#wellness-before-after .wellness-comparison { display: grid; gap: 18px; }
+#wellness-before-after .wellness-row { display: grid; grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr); align-items: center; gap: 10px; }
+#wellness-before-after .wellness-side { overflow: hidden; border-radius: 18px; background: var(--main-bg); box-shadow: 0 7px 18px color-mix(in srgb, var(--navy) 9%, transparent); }
+#wellness-before-after .wellness-side img { display: block; width: 100%; height: 110px; object-fit: cover; }
+#wellness-before-after .wellness-side span { display: block; margin: 10px 12px 0; color: var(--highlighted); font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+#wellness-before-after .wellness-side h3 { margin: 3px 12px 0; color: var(--text-color); font-size: 17px; }
+#wellness-before-after .wellness-side p { margin: 5px 12px 14px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+#wellness-before-after .wellness-side h3 { margin: 12px; }
+#wellness-before-after .wellness-before { border: 1px solid color-mix(in srgb, var(--muted) 25%, transparent); }
+#wellness-before-after .wellness-after { border: 1px solid color-mix(in srgb, var(--highlighted) 45%, transparent); }
+#wellness-before-after .wellness-arrow { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--highlighted); color: var(--main-bg); font-weight: 800; }
+@media (max-width: 600px) {
+  #wellness-before-after .wellness-row { grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr); gap: 6px; }
+  #wellness-before-after .wellness-side img { height: 82px; }
+  #wellness-before-after .wellness-side h3 { font-size: 15px; }
+  #wellness-before-after .wellness-side p { font-size: 12px; }
+  #wellness-before-after .wellness-arrow { width: 24px; height: 24px; font-size: 12px; }
+}
+</style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="banner" id="home">
+        <img
+          class="hero-banner-image"
+          src="images/banner.avif"
+          alt="SHE MANTRA आयुर्वेदिक वजन प्रबंधन"
+          width="1080"
+          height="1920"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </section>
+      <section id="problem-section">
+        <div class="section-head">
+          <div class="kicker"></div>
+          <h2>PCOS, PCOD और हार्मोनल बदलावों से जुड़ी समस्याएँ</h2>
+        </div>
+        <div class="concerns-grid">
+          <svg
+            class="concern-path"
+            viewBox="0 0 100 800"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M 24 110 C 55 110 55 170 76 200 S 43 315 24 400 S 56 465 76 500 S 42 620 24 700"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-dasharray="5 6"
+              vector-effect="non-scaling-stroke"
+            />
+          </svg>
+          <article class="concern-card">
+            <div class="concern-visual">
+              <img
+                src="images/problem1.avif"
+                alt=""
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              /><span class="concern-number" aria-hidden="true">01</span>
+            </div>
+            <div class="concern-copy"><h3>Period Discomfort</h3><p>पीरियड्स के दौरान पेट में दर्द और खिंचाव होना।</p></div>
+          </article>
+          <article class="concern-card">
+            <div class="concern-visual">
+              <img
+                src="images/problem2.avif"
+                alt=""
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              /><span class="concern-number" aria-hidden="true">02</span>
+            </div>
+            <div class="concern-copy"><h3>Irregular Menstrual Cycles</h3><p>पीरियड्स का समय पर न आना।</p></div>
+          </article>
+          <article class="concern-card">
+            <div class="concern-visual">
+              <img
+                src="images/problem3.avif"
+                alt=""
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              /><span class="concern-number" aria-hidden="true">03</span>
+            </div>
+            <div class="concern-copy"><h3>Mood Swings</h3><p>मूड में बार-बार बदलाव होना।</p></div>
+          </article>
+          <article class="concern-card">
+            <div class="concern-visual">
+              <img
+                src="images/problem4.avif"
+                alt=""
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              /><span class="concern-number" aria-hidden="true">04</span>
+            </div>
+            <div class="concern-copy"><h3>Feeling Tired Often</h3><p>दिनभर थकान महसूस होना।</p></div>
+          </article>
+          <article class="concern-card">
+            <div class="concern-visual">
+              <img
+                src="images/problem5.avif"
+                alt=""
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              /><span class="concern-number" aria-hidden="true">05</span>
+            </div>
+            <div class="concern-copy"><h3>Hormonal Health Concerns</h3><p>हार्मोनल बदलावों को लेकर मन में चिंता बनी रहना।</p></div>
+          </article>
+        </div>
+      </section>
+      <section id="product">
+        <div class="section-head">
+          <h2>अपनी स्वस्थ दिनचर्या में SHE MANTRA शामिल करें</h2>
+        </div>
+        <div class="product-panel">
+          <div class="product-showcase">
+            <div class="product-showcase-image">
+                <img
+                  src="images/product.avif"
+                  alt="SHE MANTRA उत्पाद"
+                  width="1672"
+                  height="941"
+                  loading="lazy"
+                  decoding="async"
+                  onerror="this.hidden = true"
+                />
+            </div>
+          </div>
+          <div class="product-description">
+            <h3>SHE MANTRA SYRUP</h3>
+            <p>
+              <strong>महिलाओं की सेहत</strong>, <strong>पीरियड्स</strong> और
+              <strong>रोज़मर्रा की ज़रूरतों</strong> का ध्यान रखना भी ज़रूरी है।
+              अपनी सेहत को <strong>प्राथमिकता दें</strong> और सही जानकारी के साथ
+              अपने लिए सही विकल्प चुनें।
+            </p>
+            <ul class="product-benefits" aria-label="SHE MANTRA के लाभ">
+              <li><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span><strong>Hormonal Balance</strong></span></li>
+              <li><i class="fa-solid fa-calendar-days" aria-hidden="true"></i><span><strong>Menstrual Care</strong></span></li>
+              <li><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i><span><strong>Strength &amp; Vitality</strong></span></li>
+              <li><i class="fa-solid fa-box-open" aria-hidden="true"></i><span><strong>Pack Size</strong></span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <div class="section-head">
+          <div class="kicker">HOW IT WORKS</div>
+          <h2>यह कैसे काम करता है</h2>
+        </div>
+        <div class="how-flow">
+          <article class="how-step">
+            <div class="how-symbol">
+              <img
+                src="images/work1.avif"
+                alt="कप में चाय"
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="how-copy">
+              <h3>Hormonal Balance</h3>
+              <p>
+                हार्मोनल स्वास्थ्य और शरीर में होने वाले बदलावों की देखभाल करने में मदद करता है।
+              </p>
+            </div>
+          </article>
+          <article class="how-step">
+            <div class="how-symbol">
+              <img
+                src="images/work2.avif"
+                alt="ताज़ी सब्ज़ियों और फलों का सलाद"
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="how-copy">
+              <h3> Menstrual Care</h3>
+              <p>
+                मासिक धर्म से जुड़ी परेशानियों और शरीर में होने वाले बदलावों की देखभाल में सहायक।
+              </p>
+            </div>
+          </article>
+          <article class="how-step">
+            <div class="how-symbol">
+              <img
+                src="images/work3.avif"
+                alt="संतुलित भोजन की थाली"
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="how-copy">
+              <h3>Strength & Vitality</h3>
+              <p>
+                शरीर की सामान्य ऊर्जा और सक्रियता बनाए रखने में सहायता करता है।
+              </p>
+            </div>
+          </article>
+          <article class="how-step">
+            <div class="how-symbol">
+              <img
+                src="images/work4.avif"
+                alt="सुबह योग करती महिला"
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="how-copy">
+              <h3>Daily Self-Care</h3>
+              <p>
+                अपनी दैनिक सेहत और देखभाल पर ध्यान देने में सहायता करता है।
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="ingredients">
+        <div class="section-head">
+          <h2>प्रमुख आयुर्वेदिक जड़ी-बूटियाँ</h2>
+        </div>
+        <div class="herbs">
+          <article class="herb">
+            <div class="herb-visual">
+              <img src="images/ing1.avif" alt="कालमेघ" loading="lazy" decoding="async" />
+            </div>
+            <div class="herb-content">
+              <h3>कालमेघ</h3>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual">
+              <img src="images/ing2.avif" alt="त्रिफला" loading="lazy" decoding="async" />
+            </div>
+            <div class="herb-content">
+              <h3>त्रिफला</h3>
+              <p>पाचन प्रक्रिया और नियमित मल त्याग बनाए रखने में मददगार।</p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual">
+              <img src="images/ing3.avif" alt="शतावरी" loading="lazy" decoding="async" />
+            </div>
+            <div class="herb-content">
+              <h3>शतावरी</h3>
+              <p>
+                प्राकृतिक एंटीऑक्सीडेंट से भरपूर और शरीर की सक्रियता बनाए रखने
+                में मददगार।
+              </p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual">
+              <img src="images/ing4.avif" alt="पिप्पली" loading="lazy" decoding="async" />
+            </div>
+            <div class="herb-content">
+              <h3>पिप्पली</h3>
+              <p>
+                पाचन प्रक्रिया और पोषक तत्वों के बेहतर अवशोषण में सहायक पारंपरिक
+                जड़ी-बूटी।
+              </p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual">
+              <img src="images/ing5.avif" alt="अश्वगंधा" loading="lazy" decoding="async" />
+            </div>
+            <div class="herb-content">
+              <h3>अश्वगंधा</h3>
+              <p>तनाव प्रबंधन और रोज़मर्रा की ऊर्जा को सहयोग देने में सहायक।</p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-visual">
+              <img src="images/ing6.avif" alt="मुलेठी" loading="lazy" decoding="async" />
+            </div>
+            <div class="herb-content">
+              <h3>मुलेठी</h3>
+              <p>महिलाओं की सामान्य सेहत और संतुलन बनाए रखने में पारंपरिक रूप से उपयोगी।</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="certificates" aria-labelledby="certificates-title">
+        <div class="section-head">
+          <h2 id="certificates-title">प्रमाणपत्र और विश्वास</h2>
+        </div>
+        <!-- Replace images/certificate-1.avif through certificate-4.avif with your certificate images. -->
+        <div class="certificate-grid">
+          <figure class="certificate-card">
+            <div class="certificate-placeholder" aria-hidden="true"><i class="fa-regular fa-file-lines"></i><span>GMP Standards</span></div>
+            <img src="images/cert1.avif" alt="GMP Standards" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.hidden = true" /><figcaption>GMP Standards</figcaption>
+          </figure>
+          <figure class="certificate-card">
+            <div class="certificate-placeholder" aria-hidden="true"><i class="fa-regular fa-file-lines"></i><span>ISO Standard</span></div>
+            <img src="images/cert2.avif" alt="ISO Standard" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.hidden = true" /><figcaption>ISO Standard</figcaption>
+          </figure>
+          <figure class="certificate-card">
+            <div class="certificate-placeholder" aria-hidden="true"><i class="fa-regular fa-file-lines"></i><span>Ayurvedic Formulation</span></div>
+            <img src="images/cert3.avif" alt="Ayurvedic Formulation" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.hidden = true" /><figcaption>Ayurvedic Formulation</figcaption>
+          </figure>
+          <figure class="certificate-card">
+            <div class="certificate-placeholder" aria-hidden="true"><i class="fa-regular fa-file-lines"></i><span>Quality Tested</span></div>
+            <img src="images/cert4.avif" alt="Quality Tested" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.hidden = true" /><figcaption>Quality Tested</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="wellness-before-after" aria-labelledby="wellness-before-after-title">
+        <div class="section-head">
+          <h2 id="wellness-before-after-title">पहले और बाद में बेहतर देखभाल</h2>
+        </div>
+        <div class="wellness-comparison">
+          <article class="wellness-row">
+            <div class="wellness-side wellness-before">
+              <img src="images/before1.avif" alt="अनियमित पीरियड्स" loading="lazy" decoding="async" />
+              <h3>Irregular Periods</h3>
+            </div>
+            <div class="wellness-arrow" aria-hidden="true">→</div>
+            <div class="wellness-side wellness-after">
+              <img src="images/after1.avif" alt="पीरियड्स ट्रैकिंग और सही देखभाल" loading="lazy" decoding="async" />
+              <h3>Regular Periods</h3>
+            </div>
+          </article>
+          <article class="wellness-row">
+            <div class="wellness-side wellness-before">
+              <img src="images/before2.avif" alt="थकान महसूस होना" loading="lazy" decoding="async" />
+              <h3>Low Energy</h3>
+            </div>
+            <div class="wellness-arrow" aria-hidden="true">→</div>
+            <div class="wellness-side wellness-after">
+              <img src="images/after2.avif" alt="सक्रिय दिनचर्या" loading="lazy" decoding="async" />
+              <h3>Better Energy</h3>
+            </div>
+          </article>
+          <article class="wellness-row">
+            <div class="wellness-side wellness-before">
+              <img src="images/before3.avif" alt="हार्मोनल स्वास्थ्य की चिंता" loading="lazy" decoding="async" />
+              <h3>Harmonal Issue</h3>
+            </div>
+            <div class="wellness-arrow" aria-hidden="true">→</div>
+            <div class="wellness-side wellness-after">
+              <img src="images/after3.avif" alt="बेहतर जागरूकता और नियमित देखभाल" loading="lazy" decoding="async" />
+              <h3>Improved Hormonal Health</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="offer" aria-labelledby="offer-title">
+        <div class="section-head"><h2 id="offer-title">Today’s Special Offer</h2></div>
+        <div class="offer-deal">
+          <div class="deal-feature">
+            <div class="deal-discount"><strong>10<span>%</span></strong><span>की छूट</span></div>
+            <div class="countdown" aria-label="ऑफर समाप्त होने का समय">
+              <span><strong id="offer-hours">00</strong>घंटे</span>
+              <span><strong id="offer-minutes">15</strong>मिनट</span>
+              <span><strong id="offer-seconds">00</strong>सेकंड</span>
+            </div>
+            <div class="offer-stickers" aria-label="डिलीवरी सुविधाएँ">
+              <span>🚚 Free Delivery</span>
+              <span>💳 COD Available</span>
+            </div>
+          </div>
+          <div class="deal-action">
+            <a href="#order-form">अभी ऑर्डर करें <span aria-hidden="true">→</span></a>
+            <p>10% छूट का लाभ उठाने के लिए अपना ऑर्डर बुक करें।</p>
+          </div>
+        </div>
+      </section>
+      <section id="before-after">
+        <div class="section-head">
+          <div class="kicker">BEFORE & AFTER</div>
+          <h2>नियमित दिनचर्या के साथ अच्छा बदलाव</h2>
+        </div>
+        <div class="before-after">
+          <div class="card">
+            <h3>पहले</h3>
+            <ul>
+              <li>✕ शरीर में भारीपन</li>
+              <li>✕ पेट और कमर के बढ़ते आकार की चिंता</li>
+              <li>✕ थोड़ा काम करने पर ही थकान होना</li>
+              <li>✕ कपड़े तंग होना</li>
+              <li>✕ लोगों के बीच संकोच</li>
+              <li>✕ दिनभर सुस्ती और कम सक्रियता</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>नियमित दिनचर्या के साथ</h3>
+            <ul>
+              <li>शरीर में हल्कापन महसूस होना</li>
+              <li>संतुलित वजन की ओर प्रयास</li>
+              <li>पाचन में आसानी</li>
+              <li>कपड़ों में ज़्यादा आराम</li>
+              <li>अपने शरीर को लेकर बेहतर आत्मविश्वास</li>
+              <li>अधिक सक्रिय रहने का प्रयास</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="order-form">
+        <div class="section-head">
+          <h2>अपना ऑर्डर बुक करें</h2>
+        </div>
+        <!-- AdyOps Form: Order She Mantra -->
+        <section class="adyops-form-section" style="width:100%;max-width:760px;margin:0 auto;">
+          <div class="adyos-form" data-form="order-she-mantra"></div>
+        </section>
+        <script src="https://app.adyops.com/embed.js" data-form="order-she-mantra" data-workspace="spherbal" async></script>
+        <!-- End AdyOps Form -->
+        <div class="form-card" hidden>
+          <div class="order-summary">
+            <span class="order-summary-icon"
+              ><i class="fa-solid fa-box-open" aria-hidden="true"></i
+            ></span>
+            <div class="order-summary-name">
+              <strong>SHE MANTRA</strong
+              ><small>Free Delivery · COD Available</small>
+            </div>
+          </div>
+          <form id="orderForm" onsubmit="return submitForm(event);">
+            <h3 class="order-fields-heading">
+              <i class="fa-solid fa-address-card" aria-hidden="true"></i>आवश्यक
+              जानकारी
+            </h3>
+            <input type="hidden" name="key" value="XQP4bdtEZkt3" />
+            <input type="hidden" name="date" id="date" />
+            <input type="hidden" name="utm_source" /><input
+              type="hidden"
+              name="utm_medium"
+            /><input type="hidden" name="utm_campaign" />
+            <input type="hidden" name="utm_campaign_id" /><input
+              type="hidden"
+              name="utm_adset"
+            /><input type="hidden" name="utm_adset_id" />
+            <input type="hidden" name="utm_ad" /><input
+              type="hidden"
+              name="utm_ad_id"
+            /><input type="hidden" name="utm_placement" />
+            <input type="hidden" name="event_id" id="event_id" /><input
+              type="hidden"
+              name="fbclid"
+            /><input type="hidden" name="fbc" /><input
+              type="hidden"
+              name="fbp"
+            />
+            <div class="field">
+              <label for="name"
+                ><i class="fa-regular fa-user" aria-hidden="true"></i>आपका नाम
+                *</label
+              ><input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                pattern="[A-Za-z\u0900-\u097F\u0A80-\u0AFF ]+"
+                placeholder="अपना पूरा नाम दर्ज करें"
+              />
+              <div class="err" id="nameError">कृपया पूरा नाम दर्ज करें।</div>
+            </div>
+            <div class="field">
+              <label for="phone"
+                ><i
+                  class="fa-solid fa-mobile-screen-button"
+                  aria-hidden="true"
+                ></i
+                >मोबाइल नंबर *</label
+              ><input
+                type="tel"
+                id="phone"
+                name="phone"
+                maxlength="10"
+                inputmode="numeric"
+                autocomplete="tel"
+                pattern="[6-9][0-9]{9}"
+                required
+                placeholder="10 अंकों का मोबाइल नंबर"
+              />
+              <div class="err" id="phoneError">
+                कृपया सही 10 अंकों का नंबर दर्ज करें।
+              </div>
+            </div>
+            <button class="submit" id="submitBtn" type="submit">
+              ऑर्डर की पुष्टि करें
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+            <div class="secure">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>आपकी जानकारी
+              सुरक्षित है
+            </div>
+          </form>
+          <div class="order-status" id="order-status" role="status"></div>
+        </div>
+        <h3 class="benefits-title">ऑर्डर के साथ सुविधाएँ</h3>
+        <div class="order-benefit-grid">
+          <div class="order-benefit">
+            <i class="fa-solid fa-truck-fast" aria-hidden="true"></i
+            ><span>Free Delivery</span>
+          </div>
+          <div class="order-benefit">
+            <i class="fa-solid fa-wallet" aria-hidden="true"></i
+            ><span>COD Available</span>
+          </div>
+          <div class="order-benefit">
+            <i class="fa-solid fa-box" aria-hidden="true"></i
+            ><span>Genuine Product</span>
+          </div>
+        </div>
+      </section>
+      <section id="quality">
+        <div class="section-head">
+          <div class="kicker">QUALITY & TRUST</div>
+          <h2>गुणवत्ता और विश्वास</h2>
+        </div>
+        <div class="trust-grid">
+          <article class="trust-card">
+            <div class="slimax-symbol">
+              <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+            </div>
+            <h3>आयुर्वेदिक मिश्रण</h3>
+            <p>पारंपरिक आयुर्वेदिक जड़ी-बूटियों से तैयार।</p>
+          </article>
+          <article class="trust-card">
+            <div class="slimax-symbol">
+              <i class="fa-solid fa-flask" aria-hidden="true"></i>
+            </div>
+            <h3>हानिकारक रसायनों से मुक्त</h3>
+            <p>
+              फ़ॉर्मूले में वजन घटाने वाले हानिकारक रसायनों का उपयोग नहीं किया
+              गया है।
+            </p>
+          </article>
+          <article class="trust-card">
+            <div class="slimax-symbol">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <h3>गुणवत्ता की जाँच</h3>
+            <p>निर्धारित उत्पादन और गुणवत्ता मानकों के अनुसार तैयार।</p>
+          </article>
+          <article class="trust-card">
+            <div class="slimax-symbol">
+              <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+            </div>
+            <h3>नियमित उपयोग के लिए आसान</h3>
+            <p>
+              सुझाई गई मात्रा में इसे अपनी रोज़ की दिनचर्या का हिस्सा बनाया जा
+              सकता है।
+            </p>
+          </article>
+        </div>
+        <div class="quote-box">
+          आयुर्वेदिक जड़ी-बूटियों के साथ अपने बेहतर बदलाव की शुरुआत करें।
+        </div>
+      </section>
+      <section id="experiences">
+        <div class="section-head">
+          <div class="kicker">CUSTOMER EXPERIENCES</div>
+          <h2>ग्राहकों के अनुभव</h2>
+        </div>
+        <div class="stories">
+          <article class="story">
+            <div class="story-head">
+              <div class="story-photo">
+                <span aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+
+                <img
+                  src="images/test1.avif"
+                  alt=""
+                  width="84"
+                  height="84"
+                  loading="lazy"
+                  onerror="this.hidden = true"
+                />
+              </div>
+              <div class="story-person">
+                <h3>तनु कुमारी</h3>
+                <div class="story-city">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>30
+                  वर्ष · चंडीगढ़
+                </div>
+              </div>
+            </div>
+            <blockquote>
+              <p>
+                “PCOS और अनियमित पीरियड्स को लेकर मैं काफी परेशान रहती थी। अपनी सेहत का ध्यान रखने के साथ मैंने SHE MANTRA SYRUP को अपनी दिनचर्या में शामिल किया। अब मुझे अपने पीरियड्स में पहले से बेहतर नियमितता महसूस हो रही है।”
+              </p>
+            </blockquote>
+            <div class="story-footer">
+              <div class="stars" aria-label="Sample rating: 5 में से 5 स्टार">
+                ★★★★★
+              </div>
+            </div>
+          </article>
+          <article class="story">
+            <div class="story-head">
+              <div class="story-photo">
+                <span aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+
+                <img
+                  src="images/test2.avif"
+                  alt=""
+                  width="84"
+                  height="84"
+                  loading="lazy"
+                  onerror="this.hidden = true"
+                />
+              </div>
+              <div class="story-person">
+                <h3>प्रिया सिंह</h3>
+                <div class="story-city">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>27
+                  वर्ष · कानपुर
+                </div>
+              </div>
+            </div>
+            <blockquote>
+              <p>
+                “मूड में बार-बार बदलाव और हार्मोनल हेल्थ को लेकर मैं काफी परेशान रहती थी। मैंने SHE MANTRA SYRUP को अपनी दिनचर्या में शामिल किया। 20–25 दिन बाद मुझे अपनी हार्मोनल हेल्थ में काफी सुधार महसूस हुआ।”
+              </p>
+            </blockquote>
+            <div class="story-footer">
+              <div class="stars" aria-label="Sample rating: 5 में से 5 स्टार">
+                ★★★★★
+              </div>
+            </div>
+          </article>
+          <article class="story">
+            <div class="story-head">
+              <div class="story-photo">
+                <span aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+
+                <img
+                  src="images/test3.avif"
+                  alt=""
+                  width="84"
+                  height="84"
+                  loading="lazy"
+                  onerror="this.hidden = true"
+                />
+              </div>
+              <div class="story-person">
+                <h3>पायल मिश्रा</h3>
+                <div class="story-city">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>35
+                  वर्ष ·पटना
+                </div>
+              </div>
+            </div>
+            <blockquote>
+              <p>
+               “PCOD की वजह से पीरियड्स में होने वाले बदलावों को लेकर मैं अक्सर परेशान रहती थी। कभी पीरियड्स समय पर नहीं आते थे, तो कभी अपनी सेहत को लेकर कई सवाल मन में आते थे। SHE MANTRA SYRUP इस्तेमाल करने के बाद मुझे अपनी सेहत में कुछ सकारात्मक बदलाव महसूस हुए।”
+              </p>
+            </blockquote>
+            <div class="story-footer">
+              <div class="stars" aria-label="Sample rating: 5 में से 5 स्टार">
+                ★★★★★
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="section-head">
+          <h2>आपके सवाल, हमारे जवाब</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-0"
+            >
+              SHE MANTRA क्या है?<span aria-hidden="true">+</span>
+            </button>
+            <div class="answer" id="answer-0">
+              SHE MANTRA आयुर्वेदिक जड़ी-बूटियों से तैयार एक मिश्रण है, जिसे महिलाओं के हार्मोनल स्वास्थ्य, मासिक धर्म संबंधी देखभाल और सामान्य ऊर्जा बनाए रखने में सहयोग के उद्देश्य से बनाया गया है।
+            </div>
+          </div>
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-3"
+            >
+              परिणाम कितने समय में दिख सकते हैं?<span aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="answer" id="answer-3">
+             नियमित इस्तेमाल से 20 से 25 दिनों में आपको बदलाव दिखने लगेगा।
+            </div>
+          </div>
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-4"
+            >
+              क्या हर कोई इसका सेवन कर सकता है?<span aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="answer" id="answer-4">
+             हाँ, हर कोई इसका सेवन कर सकता है।
+            </div>
+          </div>
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-5"
+            >
+              क्या डिलीवरी के समय भुगतान उपलब्ध है?<span aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="answer" id="answer-5">
+              हाँ, डिलीवरी के समय भुगतान की सुविधा उपलब्ध है।
+            </div>
+          </div>
+          <div class="faq">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="answer-6"
+            >
+              क्या इसका कोई side effect है?<span aria-hidden="true">+</span>
+            </button>
+            <div class="answer" id="answer-6">
+              नहीं, इसके कोई साइड इफेक्ट नहीं हैं।
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="disclaimer" id="disclaimer">
+        <h2>Disclaimer</h2>
+        <p>
+          SheMantra Syrup is an Ayurvedic support product. Results may vary from person to person. It is not intended to diagnose, treat, cure, or prevent any disease. Consult a qualified healthcare professional before use if you have a medical condition or are taking any medication.
+        </p>
+      </section>
+      <footer>
+        <nav class="policy-links" aria-label="Policies">
+          <button type="button" onclick="openModal('privacy')">
+            Privacy Policy</button
+          ><button type="button" onclick="openModal('terms')">
+            Terms &amp; Conditions</button
+          ><button type="button" onclick="openModal('cancel')">
+            Refund and Cancellation
+          </button>
+        </nav>
+        <p>© 2026 She Mantra. All rights reserved.</p>
+      </footer>
+      <div class="sticky" id="order-sticky">
+        <a href="#order-form">अभी ऑर्डर करें</a>
+      </div>
+      <div class="loading" id="loading">
+        <div class="loading-box">
+          <div class="spinner"></div>
+          <p>आपका अनुरोध भेजा जा रहा है...</p>
+        </div>
+      </div>
+    </main>
+
+    <div class="pp-overlay" id="pp-overlay" onclick="closeIfOutside(event)">
+      <div class="pp-modal" id="pp-modal">
+        <button class="pp-close" onclick="closeModal()" aria-label="Close">
+          ×
+        </button>
+        <div id="pp-content"></div>
+      </div>
+    </div>
+
+    <script>
+      (() => {
+        const hours = document.getElementById("offer-hours");
+        const minutes = document.getElementById("offer-minutes");
+        const seconds = document.getElementById("offer-seconds");
+        if (!hours || !minutes || !seconds) return;
+        let remaining = 15 * 60;
+        const update = () => {
+          hours.textContent = String(Math.floor(remaining / 3600)).padStart(2, "0");
+          minutes.textContent = String(Math.floor((remaining % 3600) / 60)).padStart(2, "0");
+          seconds.textContent = String(remaining % 60).padStart(2, "0");
+          if (remaining > 0) remaining -= 1;
+        };
+        update();
+        setInterval(update, 1000);
+      })();
+    </script>
+    <script>
+      // Brief touch feedback; release on scrolling or cancellation.
+      document.querySelectorAll(".concern-card").forEach((card) => {
+        let timer;
+        const release = () => {
+          clearTimeout(timer);
+          card.classList.remove("is-pressed");
+        };
+        card.addEventListener("pointerdown", (event) => {
+          if (event.pointerType === "mouse" && event.button !== 0) return;
+          clearTimeout(timer);
+          card.classList.add("is-pressed");
+          timer = setTimeout(release, 700);
+        });
+        card.addEventListener("pointerup", () => {
+          timer = setTimeout(release, 160);
+        });
+        ["pointercancel", "pointerleave", "lostpointercapture"].forEach(
+          (type) => card.addEventListener(type, release),
+        );
+      });
+
+      const $ = (s) => document.querySelector(s),
+        $$ = (s) => [...document.querySelectorAll(s)];
+
+      // Sticky order bar: hidden on the banner, visible from Problem onward, hidden on the order form.
+      const stickyOrder = $("#order-sticky");
+      const bannerSection = $(".banner");
+      const problemSection = bannerSection?.nextElementSibling || null;
+      const orderFormSection = $("#order-form");
+      let stickyFrame = 0;
+
+      function isInViewport(element) {
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      }
+
+      function updateStickyOrder() {
+        stickyFrame = 0;
+        if (!stickyOrder) return;
+
+        const problemStarted =
+          problemSection &&
+          problemSection.getBoundingClientRect().top < window.innerHeight;
+        const hideOnBanner = isInViewport(bannerSection) && !problemStarted;
+        const hideOnOrderForm = isInViewport(orderFormSection);
+
+        stickyOrder.classList.toggle(
+          "show",
+          !(hideOnBanner || hideOnOrderForm),
+        );
+      }
+
+      function scheduleStickyUpdate() {
+        if (!stickyFrame)
+          stickyFrame = requestAnimationFrame(updateStickyOrder);
+      }
+
+      window.addEventListener("scroll", scheduleStickyUpdate, {
+        passive: true,
+      });
+      window.addEventListener("resize", scheduleStickyUpdate);
+      updateStickyOrder();
+      $$(".faq button").forEach((b) =>
+        b.addEventListener("click", () => {
+          const f = b.parentElement;
+          f.classList.toggle("open");
+          b.setAttribute("aria-expanded", String(f.classList.contains("open")));
+          b.querySelector("span").textContent = f.classList.contains("open")
+            ? "−"
+            : "+";
+        }),
+      );
+
+      const UTM_KEYS = [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_campaign_id",
+        "utm_adset",
+        "utm_adset_id",
+        "utm_ad",
+        "utm_ad_id",
+        "utm_placement",
+      ];
+      function setHidden(n, v) {
+        const i = document.querySelector('#orderForm input[name="' + n + '"]');
+        if (i) i.value = v || "";
+      }
+      function cookie(n) {
+        const m = document.cookie.match(
+          new RegExp("(?:^|;\\s*)" + n + "=([^;]*)"),
+        );
+        return m ? decodeURIComponent(m[1]) : "";
+      }
+      function capture() {
+        const p = new URLSearchParams(location.search);
+        UTM_KEYS.forEach((k) =>
+          setHidden(k, p.get(k) || sessionStorage.getItem(k) || ""),
+        );
+        UTM_KEYS.forEach((k) => {
+          if (p.get(k))
+            try {
+              sessionStorage.setItem(k, p.get(k));
+            } catch (_) {
+              /* storage may be unavailable */
+            }
+        });
+        const fbclid = p.get("fbclid") || "";
+        setHidden("fbclid", fbclid);
+        setHidden(
+          "fbc",
+          cookie("_fbc") || (fbclid ? "fb.1." + Date.now() + "." + fbclid : ""),
+        );
+        setHidden("fbp", cookie("_fbp"));
+      }
+      capture();
+
+      const nameInput = $("#name");
+      const phoneInput = $("#phone");
+
+      nameInput?.addEventListener("input", () => {
+        nameInput.value = nameInput.value
+          .replace(/[^A-Za-z\u0900-\u097F\u0A80-\u0AFF ]/g, "")
+          .replace(/\s{2,}/g, " ")
+          .replace(/^\s+/, "");
+        err("nameError", false);
+      });
+
+      phoneInput?.addEventListener("input", () => {
+        let value = phoneInput.value.replace(/\D/g, "").slice(0, 10);
+        if (value && !/^[6-9]/.test(value)) value = value.slice(1);
+        phoneInput.value = value;
+        err("phoneError", false);
+      });
+
+      function validName(v) {
+        return /^[A-Za-z\u0900-\u097F\u0A80-\u0AFF]+(?: [A-Za-z\u0900-\u097F\u0A80-\u0AFF]+)+$/.test(
+          v.trim(),
+        );
+      }
+      function validPhone(v) {
+        return /^[6-9][0-9]{9}$/.test(v);
+      }
+      function err(id, on) {
+        document.getElementById(id)?.classList.toggle("show", on);
+      }
+      function eventId() {
+        return globalThis.crypto?.randomUUID
+          ? globalThis.crypto.randomUUID()
+          : "evt-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+      }
+      function submitForm(e) {
+        e.preventDefault();
+        const n = $("#name").value.trim(),
+          p = $("#phone").value.trim();
+        const nameOk = validName(n);
+        const phoneOk = validPhone(p);
+        err("nameError", !nameOk);
+        err("phoneError", !phoneOk);
+        if (!nameOk || !phoneOk || !e.target.reportValidity()) return false;
+        capture();
+        $("#date").value = new Intl.DateTimeFormat("en-IN", {
+          timeZone: "Asia/Kolkata",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        }).format(new Date());
+        $("#event_id").value = eventId();
+        const loading = $("#loading");
+        loading.classList.add("show");
+        const form = e.target,
+          formData = new FormData(form);
+        if (typeof fbq === "function")
+          fbq(
+            "track",
+            "Lead",
+            { content_name: "SHE MANTRA" },
+            { eventID: $("#event_id").value },
+          );
+        const endpoint = "https://script.google.com/macros/s//exec";
+        if (!endpoint || endpoint.endsWith("/macros/s//exec")) {
+          setTimeout(() => {
+            loading.classList.remove("show");
+            $("#order-status").textContent =
+              "ऑनलाइन ऑर्डर फिलहाल उपलब्ध नहीं है। कृपया कुछ समय बाद फिर से प्रयास करें।";
+          }, 350);
+          return false;
+        }
+        fetch(endpoint, { method: "POST", body: formData })
+          .then((r) => {
+            if (!r.ok) throw new Error("Submission failed");
+            form.reset();
+            location.href = "./Thankyou.html";
+          })
+          .catch(() => {
+            loading.classList.remove("show");
+            alert(
+              "नेटवर्क की समस्या के कारण अनुरोध नहीं भेजा जा सका। कृपया फिर से प्रयास करें।",
+            );
+          });
+        return false;
+      }
+
+      const contents = {
+        privacy:
+          '<h2 class="pp-mtitle">Privacy Policy</h2><p>We (SHE MANTRA) respect your privacy. This Policy explains how we collect, use and protect your data.</p><h3>1. What information do we collect?</h3><p>Your name, mobile number, address, and PIN code are collected when filling out the order form.</p><h3>2. Usage</h3><p>For order process and delivery</p><p>For order related communication</p><p>For customer support</p><h3>3. Data security</h3><p>Your information is stored securely and is not sold to any third parties, except to delivery partners to fulfill orders.</p><h3>4. Contact</h3><p>For any questions regarding privacy, please contact the number provided in the order form.</p>',
+        terms:
+          '<h2 class="pp-mtitle">Terms & Conditions</h2><p>By using this website, you agree to the following rules.</p><h3>1. Product Information</h3><p>SHE MANTRA is an Ayurvedic support product. Results may vary from person to person, and it is not a substitute for treatment of any disease.</p><h3>2. Order</h3><p>After confirming the order, the delivery timeline may vary depending on the location.</p><h3>3. Price</h3><p>Prices and offers shown on the website may change from time to time.</p><h3>4. Responsibility</h3><p>Consult a doctor before using the product, especially if you are pregnant, breastfeeding, or have a medical condition.</p>',
+        cancel:
+          '<h2 class="pp-mtitle">Refund & Cancellation Policy</h2><h3>1. Order Cancellation</h3><p>Orders can be canceled before they are shipped. For cancellations, please contact the contact number provided in the order form.</p><h3>2. Refund</h3><p>If you receive a damaged or wrong product, a replacement or refund will be processed if reported within 24-48 hours of delivery.</p><h3>3. Refund Timeline</h3><p>Approved refunds are processed to the original payment method within 5-7 business days.</p><h3>4. Non-Returnable</h3><p>For health and hygiene reasons, opened/used products cannot be returned, unless they are damaged or defective.</p>',
+      };
+      function openModal(k) {
+        if (!contents[k]) return;
+        $("#pp-content").innerHTML = contents[k];
+        $("#pp-overlay").classList.add("show");
+        $("#pp-modal").scrollTo(0, 0);
+      }
+      function closeModal() {
+        if (!$("#pp-overlay").classList.contains("show")) return;
+        $("#pp-overlay").classList.remove("show");
+      }
+      function closeIfOutside(e) {
+        if (e.target === $("#pp-overlay")) closeModal();
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+      $("#pp-overlay").addEventListener(
+        "wheel",
+        (e) => {
+          if (!$("#pp-modal").contains(e.target)) e.preventDefault();
+        },
+        { passive: false },
+      );
+      $("#pp-overlay").addEventListener(
+        "touchmove",
+        (e) => {
+          if (!$("#pp-modal").contains(e.target)) e.preventDefault();
+        },
+        { passive: false },
+      );
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+      window.closeIfOutside = closeIfOutside;
+    </script>
+    <script>
+      (() => {
+        const comparison = document.getElementById("comparison");
+        if (
+          !comparison ||
+          !("IntersectionObserver" in window) ||
+          window.matchMedia("(prefers-reduced-motion: reduce) && false").matches
+        )
+          return;
+        const observer = new IntersectionObserver(
+          (entries) => {
+            if (entries.some((entry) => entry.isIntersecting)) {
+              comparison.classList.remove("comparison-pending");
+              observer.disconnect();
+            }
+          },
+          { threshold: 0.12 },
+        );
+        comparison.classList.add("comparison-pending");
+        observer.observe(comparison);
+      })();
+    </script>
+  </body>
+</html>

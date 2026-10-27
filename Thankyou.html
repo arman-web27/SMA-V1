@@ -1,0 +1,413 @@
+﻿<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#B76E79" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>धन्यवाद — SHE MANTRA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #FBF4E9;
+        --main-bg: #FFFDF9;
+        --text-color: #38252A;
+        --highlighted: #B76E79;
+        --blue: #B76E79;
+        --navy: #38252A;
+        --muted: #6B555B;
+        --line: #E8D8C8;
+        --tint: #F3E5D5;
+        --page-bg: var(--bg);
+        --plum: var(--navy);
+        --ink: var(--text-color);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--main-bg);
+        color: var(--text-color);
+        font-family: "Noto Sans Devanagari", system-ui, sans-serif;
+      }
+      .page {
+        width: 100%;
+        max-width: 450px;
+        min-height: 100vh;
+        margin-inline: auto;
+        background: var(--page-bg);
+        border-inline: 1px solid var(--line);
+        overflow: hidden;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:focus-visible {
+        outline: 3px solid var(--highlighted);
+        outline-offset: 5px;
+      }
+      .masthead {
+        background: var(--page-bg);
+        color: var(--text-color);
+        padding: 24px 22px 16px;
+      }
+      .header-inner {
+        max-width: 450px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .brand {
+        font-family: system-ui, sans-serif;
+        font-size: 23px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        color: var(--highlighted);
+      }
+      .brand small {
+        display: block;
+        margin-top: 6px;
+        font-size: 8px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: var(--muted);
+      }
+      .header-note {
+        font-size: 12px;
+        color: var(--muted);
+        padding: 5px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+      }
+      main {
+        width: calc(100% - 36px);
+        max-width: 450px;
+        margin: 0 auto;
+        padding-top: 28px;
+        position: relative;
+      }
+      .confirmation {
+        padding: 34px 22px 28px;
+        text-align: center;
+        background: radial-gradient(ellipse at top, #F5EAE0, var(--main-bg) 65%);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        animation: thankyouReveal .6s ease both;
+      }
+      .check {
+        width: 78px;
+        height: 78px;
+        display: grid;
+        place-items: center;
+        margin: 0 auto 24px;
+        border-radius: 26px;
+        color: #fff;
+        background: var(--highlighted);
+        box-shadow: 0 0 0 8px color-mix(in srgb, var(--highlighted) 12%, transparent), 0 10px 22px color-mix(in srgb, var(--highlighted) 22%, transparent);
+        transform: rotate(-8deg);
+      }
+      .check svg {
+        width: 40px;
+        height: 40px;
+        transform: rotate(8deg);
+      }
+      .check path {
+        stroke-dasharray: 40;
+        animation: thankyouCheck .8s ease both;
+      }
+      .status {
+        margin: 0 0 9px;
+        color: var(--highlighted);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+      h1 {
+        font-family: "Noto Sans Devanagari", serif;
+        font-size: clamp(36px, 11vw, 46px);
+        line-height: 1.4;
+        color: var(--text-color);
+      }
+      .confirmation h2 {
+        margin-top: 8px;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--text-color);
+      }
+      .confirmation > p:last-child {
+        max-width: 470px;
+        margin: 12px auto 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.8;
+      }
+      .details {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 18px;
+        gap: 18px;
+        overflow: visible;
+      }
+      .product {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 1fr);
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
+        background: var(--main-bg);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+      }
+      .product-image {
+        width: 100%;
+        height: auto;
+        max-height: 160px;
+        aspect-ratio: 1672 / 941;
+        object-fit: contain;
+        background: transparent;
+        border-radius: 12px;
+      }
+      .product-copy {
+        padding: 0;
+        text-align: left;
+        background: transparent;
+      }
+      .eyebrow {
+        color: var(--highlighted);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+      .product-title {
+        margin: 5px 0;
+        font-family: system-ui, sans-serif;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: var(--text-color);
+      }
+      .product-copy > p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+      .benefits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 5px;
+        margin-top: 12px;
+      }
+      .benefits span {
+        padding: 4px 8px;
+        border: 1px solid color-mix(in srgb, var(--highlighted) 24%, transparent);
+        border-radius: 999px;
+        background: var(--page-bg);
+        font-size: 11px;
+        color: var(--text-color);
+      }
+      .next {
+        padding: 24px 20px;
+        background: var(--main-bg);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+      }
+      .next h2 {
+        margin: 6px 0 24px;
+        font-size: 24px;
+        line-height: 1.5;
+        color: var(--text-color);
+        font-family: "Noto Sans Devanagari", serif;
+      }
+      .steps {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .step {
+        position: relative;
+        display: grid;
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 14px;
+        padding-bottom: 25px;
+      }
+      .step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        left: 17px;
+        top: 42px;
+        bottom: 6px;
+        width: 0;
+        border-left: 1px dashed color-mix(in srgb, var(--highlighted) 40%, transparent);
+        background: none;
+      }
+      .number {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        border: 1px solid color-mix(in srgb, var(--highlighted) 35%, transparent);
+        border-radius: 12px;
+        font-size: 13px;
+        font-family: system-ui, sans-serif;
+        font-weight: 700;
+        color: var(--highlighted);
+        background: var(--bg);
+      }
+      .step:first-child .number {
+        color: #fff;
+        background: var(--highlighted);
+        border-color: var(--highlighted);
+      }
+      .step strong {
+        display: block;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+      .step p {
+        margin-top: 4px;
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+      .step:last-child {
+        padding-bottom: 0;
+      }
+      .note {
+        margin-top: 24px;
+        padding: 16px;
+        background: var(--page-bg);
+        border: 1px solid color-mix(in srgb, var(--highlighted) 20%, transparent);
+        border-radius: 14px;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .note > span {
+        font-size: 24px;
+        color: var(--highlighted);
+      }
+      .note p {
+        font-size: 14px;
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+      .home-link {
+        min-height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 22px;
+        padding: 12px 16px;
+        border: 0;
+        border-radius: 14px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--main-bg);
+        background: var(--highlighted);
+        box-shadow: 0 8px 18px color-mix(in srgb, var(--highlighted) 22%, transparent);
+        transition: transform .2s ease, box-shadow .2s ease;
+      }
+      .home-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 22px color-mix(in srgb, var(--highlighted) 30%, transparent);
+      }
+      footer {
+        padding: 22px 16px 26px;
+        text-align: center;
+        font-size: 11px;
+        color: var(--muted);
+      }
+      footer strong {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--highlighted);
+        font-weight: 600;
+        font-size: 13px;
+      }
+      @keyframes thankyouReveal {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes thankyouCheck {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @media (max-width: 360px) {
+        main { width: calc(100% - 24px); }
+        .confirmation, .next { padding-inline: 16px; }
+        .product { grid-template-columns: 90px minmax(0, 1fr); gap: 10px; padding: 12px; }
+        .header-note { font-size: 11px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .confirmation, .check path { animation: none; }
+        .home-link { transition: none; }
+        .home-link:hover { transform: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <main>
+        <section class="confirmation" aria-labelledby="thank-you-title">
+          <div class="check" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="m7 16 6 6L25 10"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p class="status">अनुरोध प्राप्त हुआ</p>
+          <h1 id="thank-you-title">धन्यवाद!</h1>
+          <h2>हमें आपका अनुरोध मिल गया है।</h2>
+          <p>
+            हमारी टीम जल्द ही आपको कॉल करेगी और आपकी जानकारी तथा ऑर्डर की पुष्टि
+            करेगी।
+          </p>
+        </section>
+        <div class="details">
+          <section class="next" aria-labelledby="steps-title">
+            <h2 id="steps-title">हम जल्द ही आपसे संपर्क करेंगे।</h2>
+            <ol class="steps">
+              <li class="step">
+                <span class="number" aria-hidden="true">✓</span>
+                <div><strong>आपका अनुरोध सफलतापूर्वक प्राप्त हो गया है।</strong><p>हमारी टीम जल्द ही कॉल करके पुष्टि करेगी।</p></div>
+              </li>
+            </ol>
+            <aside class="note">
+              <span aria-hidden="true">☎</span>
+              <p><strong>अपना फ़ोन पास रखें</strong><br />ताकि हम आपसे आसानी से संपर्क कर सकें।</p>
+            </aside>
+            <a class="home-link" href="./index.html"
+              ><span aria-hidden="true">←</span> होम पेज पर वापस जाएँ</a
+            >
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p>© 2026 She Mantra. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
